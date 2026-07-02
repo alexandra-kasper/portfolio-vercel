@@ -1,28 +1,28 @@
-// app/layout.js
-import { IBM_Plex_Mono, Source_Serif_4 } from "next/font/google";
+import { Cormorant_Garamond, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const mono = IBM_Plex_Mono({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-mono-loaded",
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-display",
 });
 
-const serif = Source_Serif_4({
+const hanken = Hanken_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-serif-loaded",
+  weight: ["200", "300", "400", "500", "600"],
+  variable: "--font-body",
 });
 
 export const metadata = {
-  title: "Alexandra — Product Manager",
+  title: "Alexandra Kasper - Product Manager",
   description:
-    "Process engineer turned product manager. Manufacturing, health tech, and EasyStride — a gait-analysis wearable case study.",
+    "Product manager with a background in engineering, manufacturing, hardware design, and data analytics.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${mono.variable} ${serif.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${hanken.variable}`}>
       <body>{children}</body>
     </html>
   );

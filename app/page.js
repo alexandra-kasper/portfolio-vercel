@@ -1,272 +1,209 @@
-// app/page.js
-import WaveformDivider from "../components/WaveformDivider";
+import Link from "next/link";
+import AuroraBackground from "../components/AuroraBackground";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
     <>
-      <nav className="nav">
-        <div className="nav-inner">
-          <span className="nav-mark">ALEXANDRA /</span>
-          <div className="nav-links">
-            <a href="#about">about</a>
-            <a href="#work">work</a>
-            <a href="#background">background</a>
-            <a href="#skills">skills</a>
-            <a href="#contact">contact</a>
-          </div>
-        </div>
-      </nav>
+      <AuroraBackground />
+      <div className="site-content">
+        <Nav />
 
-      <main className="wrap">
-        {/* ---------- Hero ---------- */}
-        <section className="hero" id="top">
-          <p className="hero-eyebrow">Process Engineer → Product Manager</p>
-          <h1>I find where the process breaks, then I build the fix.</h1>
-          <p className="lede">
-            Six years in genomics and health-tech manufacturing, most recently
-            as Senior Process Engineer and Acting Platform PM at Illumina.
-            Incoming MBA/MEng in Materials Science at UC Berkeley Haas,
-            focused on semiconductors and commercializing new technology.
-            Outside of work, I&apos;m building EasyStride — a gait-analysis
-            wearable, end to end.
-          </p>
-          <div className="hero-links">
-            <a href="#work">See the work →</a>
-            <a href="mailto:you@example.com">Email</a>
-            <a href="https://linkedin.com/in/your-handle">LinkedIn</a>
-          </div>
-
-          <div className="hero-chart" aria-hidden="true">
-            <div className="hero-chart-head">
-              <span>Flow Cell Defect Rate · Control Chart</span>
-              <span>UCL / LCL Marked</span>
-            </div>
-            <WaveformDivider />
-            <p className="hero-chart-annotation">
-              Out-of-spec drift flagged at the design stage —{" "}
-              <strong>caught in DFMEA, not in the field.</strong>
-            </p>
-          </div>
-        </section>
-
-        <WaveformDivider label="01 / About" />
-
-        {/* ---------- About ---------- */}
-        <section id="about">
-          <div className="section-head">
-            <span className="section-num">01</span>
-            <h2>About</h2>
-          </div>
-          <div className="about-grid">
+        {/* ── Hero ───────────────────────────────────────────── */}
+        <section className="hero">
+          <div className="hero-inner">
             <div>
-              <p>
-                My background is bioengineering — microfluidics, surface
-                chemistry, the kind of work where a tolerance stack-up
-                decides whether a product ships. That training is what
-                pulled me toward product: I kept ending up the person who
-                turned a messy manufacturing process into a system someone
-                could actually run, then asking why that system existed in
-                the first place.
+              <p className="hero-eyebrow">Product Manager · Berkeley, CA</p>
+              <h1 className="hero-name">Alexandra<br />Kasper</h1>
+              <p className="hero-bio">
+                I came up as an engineer in fast-paced, high-stakes manufacturing
+                - an environment where priorities change hour-to-hour and
+                under-tested changes have million dollar consequences. That
+                experience developed my passion for hardware design and data
+                analytics, and a deep conviction that trust with users and
+                stakeholders is the foundation for any product decision. I'm now
+                bringing that background to the consumer tech space.
               </p>
-              <p>
-                At Illumina, I led a sub-module through FDA approval on the
-                NovaSeq X, built a manufacturing data analytics platform that
-                reached 100% adoption and saved roughly $9M a year, and ran
-                45+ user interviews before writing a single requirement. I&apos;m
-                now applying that same instinct to product management —
-                across health tech, consumer hardware, and enterprise
-                software.
-              </p>
+              <Link href="#work" className="hero-cta">View selected work</Link>
             </div>
-            <ul className="fact-list">
-              <li>
-                <span>Now</span>
-                <span>Senior Process Engineer &amp; Acting Platform PM, Illumina</span>
-              </li>
-              <li>
-                <span>Next</span>
-                <span>MBA/MEng, Materials Science — UC Berkeley Haas</span>
-              </li>
-              <li>
-                <span>Focus</span>
-                <span>Semiconductors, hardware platforms, applied AI</span>
-              </li>
-              <li>
-                <span>Building</span>
-                <span>EasyStride — gait analysis wearable</span>
-              </li>
-              <li>
-                <span>Roots</span>
-                <span>Hobby farm, FFA chapter president</span>
-              </li>
-            </ul>
+            <div className="hero-photo-col">
+              <img
+                className="profile-img"
+                src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/Profile_Picture.jpeg"
+                alt="Alexandra Kasper"
+              />
+            </div>
           </div>
         </section>
 
-        <WaveformDivider label="02 / Work" />
-
-        {/* ---------- Case studies ---------- */}
-        <section id="work">
-          <div className="section-head">
-            <span className="section-num">02</span>
-            <h2>Selected work</h2>
-          </div>
-          <div className="case-grid">
-            <a href="/easystride" className="case-card">
-              <div className="case-card-top">
-                <h3>EasyStride</h3>
-                <span className="case-tag">Personal · 0→1</span>
-              </div>
-              <p>
-                A gait-analysis wearable app for runners with injury
-                history. Full-stack ownership: signal-processing
-                architecture, design system, and synthetic user research
-                across five personas.
-              </p>
-              <div className="case-stats">
-                <span>
-                  <strong>5</strong>personas researched
-                </span>
-                <span>
-                  <strong>IMU → metrics</strong>full pipeline
-                </span>
-                <span>
-                  <strong>Figma</strong>design system, built solo
-                </span>
-              </div>
-            </a>
-
-            <a href="#" className="case-card">
-              <div className="case-card-top">
-                <h3>Manufacturing Data Analytics Platform</h3>
-                <span className="case-tag">Illumina</span>
-              </div>
-              <p>
-                Replaced a manual, spreadsheet-driven reporting process on
-                the flow cell manufacturing line with a live analytics
-                platform — built around the failure modes I&apos;d already
-                mapped through DFMEA.
-              </p>
-              <div className="case-stats">
-                <span>
-                  <strong>$9M</strong>annual savings
-                </span>
-                <span>
-                  <strong>100%</strong>line adoption
-                </span>
-                <span>
-                  <strong>50%+</strong>defect rate reduction
-                </span>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <WaveformDivider label="03 / Background" />
-
-        {/* ---------- Timeline ---------- */}
-        <section id="background">
-          <div className="section-head">
-            <span className="section-num">03</span>
-            <h2>Where I&apos;ve been</h2>
-          </div>
-          <div className="timeline">
-            <div className="timeline-item">
-              <span className="timeline-date">2025 — Present</span>
-              <div>
-                <p className="timeline-role">Acting Platform Product Manager</p>
-                <p className="timeline-org">Illumina</p>
-                <p className="timeline-desc">
-                  Stepped into platform PM responsibilities alongside process
-                  engineering — translating manufacturing and quality
-                  requirements into product decisions.
+        {/* ── About ──────────────────────────────────────────── */}
+        <section className="about" id="about">
+          <div className="wrap">
+            <p className="section-eyebrow">About</p>
+            <div className="about-grid">
+              <div className="about-text">
+                <p>
+                  I have six years of experience influencing global,
+                  cross-functional teams across engineering, quality, data
+                  science, and product functions - without direct authority over
+                  any of them. My work has spanned designing and shipping both
+                  software and hardware, running structured experiments, and
+                  building consensus across organizations that didn't always agree
+                  on the problem, let alone the solution.
+                </p>
+                <p>
+                  Most recently I served as sole PM on Illumina's NovaSeq X
+                  manufacturing data platform - a tool that went from zero to 100%
+                  adoption and cut annual costs by $14M. Before that I led a
+                  sub-module of the NovaSeq X through FDA approval, including
+                  customer interviews across research universities and clinical
+                  labs.
+                </p>
+                <p>
+                  Alongside my industry work, I'm building consumer-facing product
+                  sense through EasyStride - a gait-analysis wearable I'm
+                  designing, engineering, and researching end to end.
                 </p>
               </div>
-            </div>
-            <div className="timeline-item">
-              <span className="timeline-date">2020 — Present</span>
-              <div>
-                <p className="timeline-role">Senior Process Engineer</p>
-                <p className="timeline-org">Illumina</p>
-                <p className="timeline-desc">
-                  Sub-module lead on NovaSeq X through FDA approval. Built a
-                  73-failure-mode DFMEA and a manufacturing analytics
-                  platform with 100% adoption and ~$9M in annual savings.
-                  Led a $1.2M capital vendor evaluation and cut flow cell
-                  defect rates by more than 50%.
-                </p>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <span className="timeline-date">2026 — 2028</span>
-              <div>
-                <p className="timeline-role">MBA/MEng, Materials Science (incoming)</p>
-                <p className="timeline-org">UC Berkeley, Haas</p>
-                <p className="timeline-desc">
-                  Dual degree concentrating in semiconductors, with a focus
-                  on commercializing new technology.
-                </p>
+              <div className="about-stats">
+                <div className="stat-row">
+                  <span className="stat-label">Experience</span>
+                  <span className="stat-value"><strong>6</strong>years</span>
+                </div>
+                <div className="stat-row">
+                  <span className="stat-label">User interviews</span>
+                  <span className="stat-value"><strong>45+</strong>conducted</span>
+                </div>
+                <div className="stat-row">
+                  <span className="stat-label">Cost impact</span>
+                  <span className="stat-value"><strong>$14M</strong>annual savings</span>
+                </div>
+                <div className="stat-row">
+                  <span className="stat-label">Tool adoption</span>
+                  <span className="stat-value"><strong>100%</strong>line-wide</span>
+                </div>
+                <div className="stat-row">
+                  <span className="stat-label">Next</span>
+                  <span className="stat-value">MBA/MEng, UC Berkeley Haas</span>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <WaveformDivider label="04 / Skills" />
+        {/* ── Work ───────────────────────────────────────────── */}
+        <section className="work" id="work">
+          <div className="wrap">
+            <p className="section-eyebrow">Work</p>
+            <h2 className="section-title">Selected projects</h2>
+            <p className="section-subtext">A mix of independent projects and industry work.</p>
 
-        {/* ---------- Skills ---------- */}
-        <section id="skills">
-          <div className="section-head">
-            <span className="section-num">04</span>
-            <h2>What I work with</h2>
-          </div>
-          <div className="skills-grid">
-            <div className="skills-group">
-              <h4>Build</h4>
-              <ul>
-                <li>Product requirements &amp; roadmapping</li>
-                <li>DFMEA &amp; failure-mode analysis</li>
-                <li>Signal processing pipelines</li>
-                <li>Figma — design systems</li>
-              </ul>
+            {/* EasyStride */}
+            <div className="project-row">
+              <Link href="/easystride" className="project-img-link">
+                <div className="project-img-wrap">
+                  <span className="project-img-placeholder">Image coming soon</span>
+                </div>
+              </Link>
+              <div className="project-text">
+                <span className="project-num">01</span>
+                <div className="project-bar" />
+                <Link href="/easystride" className="project-title-link">
+                  <h3 className="project-title">EasyStride Gait Assistant Wearable</h3>
+                </Link>
+                <p className="project-desc">
+                  A wearable gait analyzer for recreational runners with injury
+                  history. It captures the real-time biomechanics that clinical PT
+                  misses - form breakdown under fatigue, asymmetries across a full
+                  run - and delivers actionable feedback without a clinic visit.
+                </p>
+                <div className="project-tags">
+                  <span className="project-tag">Wearable</span>
+                  <span className="project-tag">IoT</span>
+                  <span className="project-tag">Health Tech</span>
+                </div>
+                <span className="project-origin">Independent project</span>
+                <Link href="/easystride" className="project-link">View case study →</Link>
+              </div>
             </div>
-            <div className="skills-group">
-              <h4>Analyze</h4>
-              <ul>
-                <li>Manufacturing data analytics</li>
-                <li>User interviews &amp; synthesis</li>
-                <li>Vendor &amp; capital evaluation</li>
-                <li>Process control &amp; SPC</li>
-              </ul>
+
+            {/* Manufacturing - image on right */}
+            <div className="project-row flip">
+              <Link href="/manufacturing" className="project-img-link">
+                <div className="project-img-wrap">
+                  <img
+                    src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/mfg_dash_img.png"
+                    alt="NovaSeqX dashboard"
+                  />
+                </div>
+              </Link>
+              <div className="project-text">
+                <span className="project-num">02</span>
+                <div className="project-bar" />
+                <Link href="/manufacturing" className="project-title-link">
+                  <h3 className="project-title">NovaSeqX Flow Cell Manufacturing Data Platform</h3>
+                </Link>
+                <p className="project-desc">
+                  Enabling the $200 genome from Illumina - from 94.26% to 97.98%
+                  yield and $14M in annual savings through automated analytics and
+                  user-centered dashboard design.
+                </p>
+                <div className="project-tags">
+                  <span className="project-tag">Data</span>
+                  <span className="project-tag">Analytics</span>
+                  <span className="project-tag">Manufacturing</span>
+                </div>
+                <span className="project-origin">Industry project · Illumina</span>
+                <Link href="/manufacturing" className="project-link">View case study →</Link>
+              </div>
             </div>
-            <div className="skills-group">
-              <h4>Lead</h4>
-              <ul>
-                <li>Cross-functional program ownership</li>
-                <li>Regulatory &amp; FDA submission support</li>
-                <li>Stage-gate &amp; PRD documentation</li>
-                <li>Bioengineering — microfluidics, surface chemistry</li>
-              </ul>
+
+            {/* Tamawatchi */}
+            <div className="project-row">
+              <div className="project-img-wrap">
+                <span className="project-img-placeholder">Image coming soon</span>
+              </div>
+              <div className="project-text">
+                <span className="project-num">03</span>
+                <div className="project-bar" />
+                <h3 className="project-title">Tamawatchi Social Fitness App</h3>
+                <p className="project-desc">
+                  An app harnessing the Tamagotchi effect to turn fitness goals
+                  into pet care - your creature thrives when you do, and a social
+                  layer keeps everyone accountable without the comparison anxiety.
+                </p>
+                <div className="project-tags">
+                  <span className="project-tag">Mobile</span>
+                  <span className="project-tag">Consumer</span>
+                  <span className="project-tag">Gamification</span>
+                </div>
+                <span className="project-origin">Independent project</span>
+              </div>
             </div>
           </div>
         </section>
 
-        <WaveformDivider />
-
-        {/* ---------- Contact ---------- */}
+        {/* ── Contact ─────────────────────────────────────────── */}
         <section className="contact" id="contact">
-          <h2>Let&apos;s talk product.</h2>
-          <div className="contact-links">
-            <a href="mailto:you@example.com">Email</a>
-            <a href="https://linkedin.com/in/your-handle">LinkedIn</a>
-            <a href="https://github.com/your-handle">GitHub</a>
+          <div className="wrap">
+            <div className="contact-inner">
+              <div>
+                <span className="contact-eyebrow">Get in touch</span>
+                <h2 className="contact-heading">Let's work together.</h2>
+                <p className="contact-subtext">
+                  Get in touch if you want to work together or you're curious
+                  about anything on this page.
+                </p>
+              </div>
+              <ContactForm />
+            </div>
           </div>
         </section>
-      </main>
 
-      <footer className="wrap">
-        <span>© 2026 Alexandra</span>
-        <span>Built with Next.js</span>
-      </footer>
+        <Footer />
+      </div>
     </>
   );
 }
