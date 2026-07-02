@@ -12,8 +12,8 @@
   --font-display: var(--font-display-loaded, "Cormorant Garamond", Georgia, serif);
   --font-body:    var(--font-body-loaded, "Hanken Grotesk", system-ui, sans-serif);
 
-  --max:  1200px;
-  --pad:  clamp(20px, 5vw, 72px);
+  --max:  1440px;
+  --pad:  clamp(20px, 4vw, 56px);
 }
 
 /* ── Reset ───────────────────────────────────────────────────────── */
@@ -56,31 +56,35 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   filter: blur(80px);
 }
 .aurora-blob-1 {
-  width: 560px; height: 500px;
+  /* top-left - large lavender anchor */
+  width: 720px; height: 640px;
   background: #e8cef2;
-  top: -100px; left: -80px;
-  opacity: 0.52;
+  top: -120px; left: -100px;
+  opacity: 0.50;
   animation: blob-float-1 14s ease-in-out infinite;
 }
 .aurora-blob-2 {
-  width: 440px; height: 380px;
+  /* center-right, pulled down into the mid-viewport */
+  width: 580px; height: 500px;
   background: #f5c8dc;
-  top: 80px; left: 30%;
+  top: 38vh; right: -60px;
   opacity: 0.38;
   animation: blob-float-2 18s ease-in-out infinite;
 }
 .aurora-blob-3 {
-  width: 500px; height: 420px;
+  /* bottom-left, anchors the lower third */
+  width: 640px; height: 560px;
   background: #f9cfc0;
-  top: 60px; right: -80px;
-  opacity: 0.45;
+  bottom: -80px; left: -40px;
+  opacity: 0.42;
   animation: blob-float-3 22s ease-in-out infinite;
 }
 .aurora-blob-4 {
-  width: 360px; height: 300px;
+  /* center, floats in the middle of the viewport */
+  width: 480px; height: 400px;
   background: #fce0cc;
-  bottom: 10%; left: 10%;
-  opacity: 0.32;
+  top: 28vh; left: 28%;
+  opacity: 0.28;
   animation: blob-float-1 26s ease-in-out infinite reverse;
 }
 @keyframes blob-float-1 {
@@ -150,8 +154,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   margin: 0 auto;
   padding: 0 var(--pad);
   display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 64px;
+  grid-template-columns: 1.6fr 260px;
+  gap: 32px;
   align-items: center;
 }
 .hero-eyebrow {

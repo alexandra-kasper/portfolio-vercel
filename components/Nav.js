@@ -18,7 +18,7 @@ export default function Nav() {
           <Link href="/#about">About</Link>
           <Link href="/#work">Work</Link>
           <Link href="/#contact">Contact</Link>
-          <Link href="https://www.linkedin.com/in/alexandraikasper/" target="_blank" rel="noopener">LinkedIn</Link>
+          <Link href="https://linkedin.com/in/alexandra-kasper" target="_blank" rel="noopener">LinkedIn</Link>
         </div>
       </div>
     </nav>

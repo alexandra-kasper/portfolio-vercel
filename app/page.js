@@ -16,7 +16,7 @@ export default function Home() {
           <div className="hero-inner">
             <div>
               <p className="hero-eyebrow">Product Manager · Berkeley, CA</p>
-              <h1 className="hero-name">Alexandra<br />Kasper</h1>
+              <h1 className="hero-name">Hi, I&apos;m<br />Alexandra Kasper.</h1>
               <p className="hero-bio">
                 I came up as an engineer in fast-paced, high-stakes manufacturing
                 - an environment where priorities change hour-to-hour and

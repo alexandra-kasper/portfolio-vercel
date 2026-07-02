@@ -18,7 +18,6 @@ export const metadata = {
   title: "Alexandra Kasper - Product Manager",
   description:
     "Product manager with a background in engineering, manufacturing, hardware design, and data analytics.",
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({ children }) {
