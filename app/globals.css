@@ -56,35 +56,37 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   filter: blur(80px);
 }
 .aurora-blob-1 {
-  /* top-left - large lavender anchor */
+  /* top-left anchor, bleeds off corner */
   width: 720px; height: 640px;
   background: #e8cef2;
-  top: -120px; left: -100px;
+  top: -80px; left: -120px;
   opacity: 0.50;
   animation: blob-float-1 14s ease-in-out infinite;
 }
 .aurora-blob-2 {
-  /* center-right, pulled down into the mid-viewport */
+  /* mid-right, 28vh down - not aligned with anything */
   width: 580px; height: 500px;
   background: #f5c8dc;
-  top: 38vh; right: -60px;
-  opacity: 0.38;
+  top: 28vh; right: -40px;
+  opacity: 0.40;
   animation: blob-float-2 18s ease-in-out infinite;
 }
 .aurora-blob-3 {
-  /* bottom-left, anchors the lower third */
+  /* bottom, shifted to 38% from left so not aligned with blob-1 on the left edge
+     gap from blob-4 is ~40vh - intentionally larger than the gaps above */
   width: 640px; height: 560px;
   background: #f9cfc0;
-  bottom: -80px; left: -40px;
+  bottom: -80px; left: 38%;
   opacity: 0.42;
   animation: blob-float-3 22s ease-in-out infinite;
 }
 .aurora-blob-4 {
-  /* center, floats in the middle of the viewport */
-  width: 480px; height: 400px;
+  /* lower-center-left at 60vh - 32vh gap from blob-2, different from the 28vh and 40vh gaps
+     larger and more intense than before to be visible */
+  width: 580px; height: 500px;
   background: #fce0cc;
-  top: 28vh; left: 28%;
-  opacity: 0.28;
+  top: 60vh; left: 12%;
+  opacity: 0.48;
   animation: blob-float-1 26s ease-in-out infinite reverse;
 }
 @keyframes blob-float-1 {
@@ -154,8 +156,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   margin: 0 auto;
   padding: 0 var(--pad);
   display: grid;
-  grid-template-columns: 1.6fr 260px;
-  gap: 32px;
+  grid-template-columns: 1.6fr 320px;
+  gap: 40px;
   align-items: center;
 }
 .hero-eyebrow {
@@ -182,7 +184,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   font-weight: 300;
   line-height: 1.8;
   color: var(--ink-mid);
-  max-width: 52ch;
   margin-bottom: 32px;
 }
 .hero-cta {
