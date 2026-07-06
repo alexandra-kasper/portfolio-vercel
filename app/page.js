@@ -104,7 +104,10 @@ export default function Home() {
             <div className="project-row">
               <Link href="/easystride" className="project-img-link">
                 <div className="project-img-wrap">
-                  <span className="project-img-placeholder">Image coming soon</span>
+                  <img
+					src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/app_design_display.png"
+					alt="EasyStride app interface"
+				  />
                 </div>
               </Link>
               <div className="project-text">
