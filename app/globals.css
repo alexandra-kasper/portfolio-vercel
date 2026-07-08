@@ -9,25 +9,24 @@
   --accent:      #b08ac0;
   --accent-lt:   #ede0f5;
 
-  --font-display: var(--font-display-loaded, "Cormorant Garamond", Georgia, serif);
-  --font-body:    var(--font-body-loaded, "Hanken Grotesk", system-ui, sans-serif);
-
   --max:  1440px;
   --pad:  clamp(20px, 4vw, 56px);
 }
 
 /* ── Reset ───────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
 }
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-body, "Hanken Grotesk", system-ui, sans-serif);
   background: var(--paper);
   color: var(--ink);
-  font-size: 18px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -72,11 +71,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   animation: blob-float-2 18s ease-in-out infinite;
 }
 .aurora-blob-3 {
-  /* bottom, shifted to 38% from left so not aligned with blob-1 on the left edge
-     gap from blob-4 is ~40vh - intentionally larger than the gaps above */
+  /* moved to lower-left - where orange blob was before repositioning */
   width: 640px; height: 560px;
   background: #f9cfc0;
-  bottom: -80px; left: 38%;
+  bottom: -80px; left: 10%;
   opacity: 0.42;
   animation: blob-float-3 22s ease-in-out infinite;
 }
@@ -219,6 +217,58 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 /* ── About ───────────────────────────────────────────────────────── */
 .about { padding: 96px 0; }
+
+/* values - three column display type treatment */
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid var(--border);
+}
+.about-value { padding-right: 40px; }
+.about-value-bar {
+  width: 28px; height: 2px;
+  background: var(--accent);
+  margin-bottom: 14px;
+}
+.about-value-text {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  color: var(--ink);
+  line-height: 1.1;
+  display: block;
+}
+@media (max-width: 600px) {
+  .about-values { grid-template-columns: 1fr; gap: 28px; }
+  .about-value { padding-right: 0; }
+}
+
+/* about subsections - full width prose */
+.about-subsection { margin-bottom: 48px; }
+.about-subsection:last-child { margin-bottom: 0; }
+.about-sub-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.about-subsection p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--ink-mid);
+  max-width: 72ch;
+}
+@media (max-width: 740px) {
+  .about-subsection p { max-width: 100%; }
+}
+
+/* ── Shared section typography ───────────────────────────────────── */
 .section-eyebrow {
   font-family: var(--font-body);
   font-size: 14px;
@@ -235,53 +285,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   color: var(--ink);
   margin-bottom: 8px;
 }
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.6fr 0.85fr;
-  gap: 56px;
-  align-items: start;
-  margin-top: 32px;
-}
-.about-text p {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.85;
-  color: var(--ink-mid);
-  margin-bottom: 16px;
-}
-.about-text p:last-child { margin-bottom: 0; }
-.about-stats { }
-.stat-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 16px;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--border);
-}
-.stat-label {
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  white-space: nowrap;
-}
-.stat-value {
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--ink);
-  text-align: right;
-}
-.stat-value strong {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: 22px;
-  color: var(--accent);
-  display: block;
-  line-height: 1.1;
-}
-@media (max-width: 740px) { .about-grid { grid-template-columns: 1fr; gap: 36px; } }
 
 /* ── Work / Portfolio rows ───────────────────────────────────────── */
 .work { padding: 96px 0; }

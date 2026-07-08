@@ -42,53 +42,73 @@ export default function Home() {
         <section className="about" id="about">
           <div className="wrap">
             <p className="section-eyebrow">About</p>
-            <div className="about-grid">
-              <div className="about-text">
-                <p>
-                  I have six years of experience influencing global,
-                  cross-functional teams across engineering, quality, data
-                  science, and product functions - without direct authority over
-                  any of them. My work has spanned designing and shipping both
-                  software and hardware, running structured experiments, and
-                  building consensus across organizations that didn't always agree
-                  on the problem, let alone the solution.
-                </p>
-                <p>
-                  Most recently I served as sole PM on Illumina's NovaSeq X
-                  manufacturing data platform - a tool that went from zero to 100%
-                  adoption and cut annual costs by $14M. Before that I led a
-                  sub-module of the NovaSeq X through FDA approval, including
-                  customer interviews across research universities and clinical
-                  labs.
-                </p>
-                <p>
-                  Alongside my industry work, I'm building consumer-facing product
-                  sense through EasyStride - a gait-analysis wearable I'm
-                  designing, engineering, and researching end to end.
-                </p>
+
+            {/* Values - three column display type */}
+            <div className="about-values">
+              <div className="about-value">
+                <div className="about-value-bar" />
+                <span className="about-value-text">Community</span>
               </div>
-              <div className="about-stats">
-                <div className="stat-row">
-                  <span className="stat-label">Experience</span>
-                  <span className="stat-value"><strong>6</strong>years</span>
-                </div>
-                <div className="stat-row">
-                  <span className="stat-label">User interviews</span>
-                  <span className="stat-value"><strong>45+</strong>conducted</span>
-                </div>
-                <div className="stat-row">
-                  <span className="stat-label">Cost impact</span>
-                  <span className="stat-value"><strong>$14M</strong>annual savings</span>
-                </div>
-                <div className="stat-row">
-                  <span className="stat-label">Tool adoption</span>
-                  <span className="stat-value"><strong>100%</strong>line-wide</span>
-                </div>
-                <div className="stat-row">
-                  <span className="stat-label">Next</span>
-                  <span className="stat-value">MBA/MEng, UC Berkeley Haas</span>
-                </div>
+              <div className="about-value">
+                <div className="about-value-bar" />
+                <span className="about-value-text">Adventure</span>
               </div>
+              <div className="about-value">
+                <div className="about-value-bar" />
+                <span className="about-value-text">Meaningful Work</span>
+              </div>
+            </div>
+
+            <div className="about-subsection">
+              <p className="about-sub-label">Personal</p>
+              <p>
+                These are the values that have always guided me. My loved ones
+                come first - from June 2024 to July 2026, that meant caring for
+                my mother through stage 4 lung cancer. Adventure means walking
+                into uncertainty wherever I find it, whether that&apos;s scuba
+                diving, backcountry camping, or a new project at work. And
+                meaningful work, to me, has three parts: it has to have real
+                impact on people&apos;s lives, it has to be technically
+                challenging, and it has to let me be creative - that pull toward
+                creativity is what first drew me into product management.
+              </p>
+            </div>
+
+            <div className="about-subsection">
+              <p className="about-sub-label">Professional</p>
+              <p>
+                Six years in the genomics space gave me technically rich, deeply
+                cross-functional work - engineering, quality, data science,
+                product - without ever holding direct authority over any of it.
+                I never quite felt like a typical engineer; I gravitated instead
+                toward organizing and synthesizing complex ideas to get teams
+                aligned around a shared spec or charter, work that spanned
+                mechanical design, metrology, data analysis, and more. That
+                instinct led me to become the sole PM on Illumina&apos;s NovaSeq X
+                manufacturing data platform, a project that met real resistance
+                early on and eventually reached 100% adoption. Coming up with
+                creative solutions to alarm fatigue with process engineers was
+                the first time I felt that same creative spark at work that
+                I&apos;d only ever felt in my hobbies.
+              </p>
+            </div>
+
+            <div className="about-subsection">
+              <p className="about-sub-label">Why Product Management</p>
+              <p>
+                Nothing gets my creative juices flowing like someone telling me
+                they have a problem I know I can solve - it&apos;s the same instinct
+                behind every bowl, pair of earrings, or painting I&apos;ve made for
+                someone just to see them smile. I&apos;ve been chasing that feeling
+                deeper ever since, most recently through EasyStride (linked
+                below), where product positioning, competitive analysis, user
+                interviews, hardware prototyping, and app design have all been
+                part of the same creative process. Product management lets me
+                step further into everything I value: the collaboration satisfies
+                my need for community, the constant change feels like adventure,
+                and building for consumer wellness means the impact is real and
+                immediate.
+              </p>
             </div>
           </div>
         </section>
