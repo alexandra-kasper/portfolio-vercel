@@ -18,13 +18,15 @@ export default function Home() {
               <p className="hero-eyebrow">Product Manager · Berkeley, CA</p>
               <h1 className="hero-name">Hi, I&apos;m<br />Alexandra Kasper.</h1>
               <p className="hero-bio">
-                I came up as an engineer in fast-paced, high-stakes manufacturing
-                - an environment where priorities change hour-to-hour and
-                under-tested changes have million dollar consequences. That
-                experience developed my passion for hardware design and data
-                analytics, and a deep conviction that trust with users and
-                stakeholders is the foundation for any product decision. I'm now
-                bringing that background to the consumer tech space.
+                My background is in engineering, built in the fast-paced,
+                high-stakes world of genomics manufacturing. I care about
+                lowering the mental load behind data-driven decisions, earning
+                real trust with users and stakeholders, and designing hardware
+                that holds up in the real world. I&apos;m now pursuing an
+                MBA/MEng (Materials Science and Engineering) at Berkeley Haas
+                to pair that foundation with product strategy and customer
+                understanding, along with technical depth into the sensors
+                themselves.
               </p>
               <Link href="#work" className="hero-cta">View selected work</Link>
             </div>
@@ -62,15 +64,16 @@ export default function Home() {
             <div className="about-subsection">
               <p className="about-sub-label">Personal</p>
               <p>
-                These are the values that have always guided me. My loved ones
-                come first - from June 2024 to July 2026, that meant caring for
-                my mother through stage 4 lung cancer. Adventure means walking
-                into uncertainty wherever I find it, whether that&apos;s scuba
-                diving, backcountry camping, or a new project at work. And
-                meaningful work, to me, has three parts: it has to have real
-                impact on people&apos;s lives, it has to be technically
-                challenging, and it has to let me be creative - that pull toward
-                creativity is what first drew me into product management.
+                Community, Adventure, and Meaningful Work. These are the values
+                that have always guided me. My loved ones come first - from June
+                2024 to July 2026, that meant caring for my mother through stage
+                4 lung cancer. Adventure means walking into uncertainty wherever
+                I find it, whether that&apos;s scuba diving, backcountry camping,
+                or a new project at work. And meaningful work, to me, has three
+                parts: it has to have real impact on people&apos;s lives, it has
+                to be technically challenging, and it has to let me be creative
+                - that pull toward creativity is what first drew me into product
+                management.
               </p>
             </div>
 

@@ -250,7 +250,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .about-subsection { margin-bottom: 48px; }
 .about-subsection:last-child { margin-bottom: 0; }
 .about-sub-label {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -262,10 +262,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   font-weight: 300;
   line-height: 1.85;
   color: var(--ink-mid);
-  max-width: 72ch;
-}
-@media (max-width: 740px) {
-  .about-subsection p { max-width: 100%; }
 }
 
 /* ── Shared section typography ───────────────────────────────────── */
@@ -281,7 +277,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .section-title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
   color: var(--ink);
   margin-bottom: 8px;
 }
@@ -681,7 +677,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .cs-section-title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: var(--ink);
   margin-bottom: 20px;
 }
