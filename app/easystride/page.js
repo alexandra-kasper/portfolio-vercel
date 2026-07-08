@@ -45,11 +45,9 @@ export default function EasyStride() {
               <span className="cs-tag">Wearable</span>
               <span className="cs-tag">IoT</span>
             </div>
-            <h1 className="cs-title">EasyStride Gait Assistant</h1>
+            <h1 className="cs-title">EasyStride</h1>
             <p className="cs-subtitle">
-              A wearable gait analyzer for recreational runners with injury
-              history. Real-time biomechanics that clinical PT misses -
-              delivered without a clinic visit.
+              Wearable Injury Prevention for Running - a shin-mounted wearable for female runners with injury history, built to motivate and reward consistency, not just measure performance.
             </p>
           </div>
         </section>

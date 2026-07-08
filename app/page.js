@@ -105,22 +105,20 @@ export default function Home() {
               <Link href="/easystride" className="project-img-link">
                 <div className="project-img-wrap">
                   <img
-					src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/app_design_display.png"
-					alt="EasyStride app interface"
-				  />
+                    src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/app_design_display.png"
+                    alt="EasyStride app interface"
+                  />
                 </div>
               </Link>
               <div className="project-text">
                 <span className="project-num">01</span>
                 <div className="project-bar" />
                 <Link href="/easystride" className="project-title-link">
-                  <h3 className="project-title">EasyStride Gait Assistant Wearable</h3>
+                  <h3 className="project-title">EasyStride</h3>
                 </Link>
+                <p className="project-desc" style={{fontStyle:'italic', marginBottom:'4px', color:'var(--ink-mid)'}}>Wearable Injury Prevention for Running</p>
                 <p className="project-desc">
-                  A wearable gait analyzer for recreational runners with injury
-                  history. It captures the real-time biomechanics that clinical PT
-                  misses - form breakdown under fatigue, asymmetries across a full
-                  run - and delivers actionable feedback without a clinic visit.
+                  A shin-mounted wearable for female runners with injury history. Built for injury prevention over performance, it emphasizes consistency - the strongest modifiable predictor of staying healthy - and is designed to motivate and reward progress, not just measure it.
                 </p>
                 <div className="project-tags">
                   <span className="project-tag">Wearable</span>
@@ -132,13 +130,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Manufacturing - image on right */}
+            {/* Apollo Dash - image on right */}
             <div className="project-row flip">
               <Link href="/manufacturing" className="project-img-link">
                 <div className="project-img-wrap">
                   <img
                     src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/mfg_dash_img.png"
-                    alt="NovaSeqX dashboard"
+                    alt="Apollo Dash manufacturing dashboard"
                   />
                 </div>
               </Link>
@@ -146,12 +144,11 @@ export default function Home() {
                 <span className="project-num">02</span>
                 <div className="project-bar" />
                 <Link href="/manufacturing" className="project-title-link">
-                  <h3 className="project-title">NovaSeqX Flow Cell Manufacturing Data Platform</h3>
+                  <h3 className="project-title">Apollo Dash</h3>
                 </Link>
+                <p className="project-desc" style={{fontStyle:'italic', marginBottom:'4px', color:'var(--ink-mid)'}}>Large-scale manufacturing data platform for new automated line</p>
                 <p className="project-desc">
-                  Enabling the $200 genome from Illumina - from 94.26% to 97.98%
-                  yield and $14M in annual savings through automated analytics and
-                  user-centered dashboard design.
+                  A decision-grade manufacturing analytics platform - 200+ individually configured metrics across a 13-tool flow cell line, 5 engineering teams aligned around shared infrastructure, and a 55% scrap rate reduction that enabled the $200 genome.
                 </p>
                 <div className="project-tags">
                   <span className="project-tag">Data</span>
@@ -160,29 +157,6 @@ export default function Home() {
                 </div>
                 <span className="project-origin">Industry project · Illumina</span>
                 <Link href="/manufacturing" className="project-link">View case study →</Link>
-              </div>
-            </div>
-
-            {/* Tamawatchi */}
-            <div className="project-row">
-              <div className="project-img-wrap">
-                <span className="project-img-placeholder">Image coming soon</span>
-              </div>
-              <div className="project-text">
-                <span className="project-num">03</span>
-                <div className="project-bar" />
-                <h3 className="project-title">Tamawatchi Social Fitness App</h3>
-                <p className="project-desc">
-                  An app harnessing the Tamagotchi effect to turn fitness goals
-                  into pet care - your creature thrives when you do, and a social
-                  layer keeps everyone accountable without the comparison anxiety.
-                </p>
-                <div className="project-tags">
-                  <span className="project-tag">Mobile</span>
-                  <span className="project-tag">Consumer</span>
-                  <span className="project-tag">Gamification</span>
-                </div>
-                <span className="project-origin">Independent project</span>
               </div>
             </div>
           </div>

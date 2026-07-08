@@ -46,11 +46,9 @@ export default function Manufacturing() {
               <span className="cs-tag">Data</span>
               <span className="cs-tag">Analytics</span>
             </div>
-            <h1 className="cs-title">NovaSeqX Flow Cell<br />Manufacturing Data Platform</h1>
+            <h1 className="cs-title">Apollo Dash</h1>
             <p className="cs-subtitle">
-              Enabling the $200 genome from Illumina - from 94.26% to 97.98%
-              yield and $14M in annual savings through user-centered automated
-              analytics and dashboard design.
+              Large-scale manufacturing data platform for new automated line - 200+ individually configured metrics, 5 engineering teams aligned around shared infrastructure, and a 55% scrap rate reduction that enabled the $200 genome.
             </p>
           </div>
         </section>

@@ -4,26 +4,18 @@ const ALL_PROJECTS = [
   {
     slug: "easystride",
     num: "01",
-    title: "EasyStride Gait Assistant Wearable",
-    desc: "A wearable gait analyzer for recreational runners with injury history - real-time biomechanics that clinical PT misses, delivered without a clinic visit.",
+    title: "EasyStride",
+    desc: "A shin-mounted wearable for female runners with injury history. Built for injury prevention over performance, emphasizing consistency as the strongest modifiable predictor of staying healthy.",
     tags: ["Wearable", "IoT", "Health Tech"],
     href: "/easystride",
   },
   {
     slug: "manufacturing",
     num: "02",
-    title: "NovaSeqX Flow Cell Manufacturing Data Platform",
-    desc: "From 94.26% to 97.98% yield and $14M in annual savings through user-centered automated analytics and dashboard design.",
+    title: "Apollo Dash",
+    desc: "A decision-grade manufacturing analytics platform - 200+ individually configured metrics across a 13-tool flow cell line and a 55% scrap rate reduction that enabled the $200 genome.",
     tags: ["Data", "Analytics", "Manufacturing"],
     href: "/manufacturing",
-  },
-  {
-    slug: "tamawatchi",
-    num: "03",
-    title: "Tamawatchi Social Fitness App",
-    desc: "An app harnessing the Tamagotchi effect to turn fitness goals into pet care - your creature thrives when you do.",
-    tags: ["Mobile", "Consumer", "Gamification"],
-    href: null,
   },
 ];
 

@@ -27,7 +27,7 @@ body {
   font-family: var(--font-body);
   background: var(--paper);
   color: var(--ink);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -81,11 +81,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   animation: blob-float-3 22s ease-in-out infinite;
 }
 .aurora-blob-4 {
-  /* lower-center-left at 60vh - 32vh gap from blob-2, different from the 28vh and 40vh gaps
-     larger and more intense than before to be visible */
+  /* pulled close to pink (blob-2) horizontally - both on right side now
+     slightly above pink at 28vh, so sits at 18vh
+     intentionally overlaps a little for a warm cluster on the right */
   width: 580px; height: 500px;
   background: #fce0cc;
-  top: 60vh; left: 12%;
+  top: 18vh; right: 18%;
   opacity: 0.48;
   animation: blob-float-1 26s ease-in-out infinite reverse;
 }
@@ -135,7 +136,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .nav-logo img { height: 30px; width: auto; }
 .nav-links { display: flex; gap: 32px; align-items: center; }
 .nav-links a {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   color: var(--ink-soft);
   letter-spacing: 0.07em;
@@ -184,6 +185,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   font-weight: 300;
   line-height: 1.8;
   color: var(--ink-mid);
+  max-width: 88%;
   margin-bottom: 32px;
 }
 .hero-cta {
@@ -216,26 +218,26 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 
 /* ── About ───────────────────────────────────────────────────────── */
-.about { padding: 72px 0; border-top: 1px solid var(--border); }
+.about { padding: 96px 0; }
 .section-eyebrow {
   font-family: var(--font-body);
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--ink-soft);
-  margin-bottom: 14px;
+  color: var(--accent);
+  margin-bottom: 18px;
 }
 .section-title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
   color: var(--ink);
   margin-bottom: 8px;
 }
 .about-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.6fr 0.85fr;
   gap: 56px;
   align-items: start;
   margin-top: 32px;
@@ -248,7 +250,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   margin-bottom: 16px;
 }
 .about-text p:last-child { margin-bottom: 0; }
-.about-stats { border-top: 1px solid var(--border); }
+.about-stats { }
 .stat-row {
   display: flex;
   justify-content: space-between;
@@ -258,7 +260,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   border-bottom: 1px solid var(--border);
 }
 .stat-label {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -266,7 +268,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   white-space: nowrap;
 }
 .stat-value {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   color: var(--ink);
   text-align: right;
@@ -282,9 +284,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 @media (max-width: 740px) { .about-grid { grid-template-columns: 1fr; gap: 36px; } }
 
 /* ── Work / Portfolio rows ───────────────────────────────────────── */
-.work { padding: 72px 0; border-top: 1px solid var(--border); }
+.work { padding: 96px 0; }
 .section-subtext {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   color: var(--ink-soft);
   margin-bottom: 52px;
@@ -294,10 +296,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
-  border-top: 1px solid var(--border);
-  padding: 56px 0;
+  padding: 64px 0;
 }
-.project-row:last-child { border-bottom: 1px solid var(--border); }
+.project-row:last-child { padding-bottom: 0; }
 .project-row.flip { direction: rtl; }
 .project-row.flip > * { direction: ltr; }
 
@@ -305,15 +306,17 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .project-img-wrap {
   background: var(--paper);
   border: 1px solid var(--border);
+  border-radius: 12px;
   aspect-ratio: 16/10;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   transition: border-color 0.2s;
+  box-shadow: inset 0 0 60px 20px var(--paper);
 }
 .project-img-link:hover .project-img-wrap { border-color: var(--accent); }
-.project-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.project-img-wrap img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
 .project-img-placeholder {
   font-size: 11px;
   font-weight: 400;
@@ -328,27 +331,27 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   justify-content: center;
   gap: 12px;
 }
-.project-num { font-size: 11px; font-weight: 400; letter-spacing: 0.14em; color: var(--accent); }
+.project-num { font-size: 13px; font-weight: 400; letter-spacing: 0.14em; color: var(--accent); }
 .project-bar { width: 32px; height: 2px; background: var(--accent); }
 .project-title-link { display: block; }
 .project-title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
   line-height: 1.15;
   color: var(--ink);
   transition: color 0.15s;
 }
 .project-title-link:hover .project-title { color: var(--accent); }
 .project-desc {
-  font-size: 14.5px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.75;
   color: var(--ink-soft);
 }
 .project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
 .project-tag {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -357,7 +360,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   padding: 4px 10px;
 }
 .project-origin {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -367,7 +370,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   align-self: flex-start;
 }
 .project-link {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
