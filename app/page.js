@@ -145,8 +145,9 @@ export default function Home() {
                 </p>
                 <div className="project-tags">
                   <span className="project-tag">Wearable</span>
-                  <span className="project-tag">IoT</span>
-                  <span className="project-tag">Health Tech</span>
+                  <span className="project-tag">Hardware</span>
+                  <span className="project-tag">Mobile App</span>
+                  <span className="project-tag">Product Strategy</span>
                 </div>
                 <span className="project-origin">Independent project</span>
                 <Link href="/easystride" className="project-link">View case study →</Link>
@@ -174,9 +175,10 @@ export default function Home() {
                   A decision-grade manufacturing analytics platform - 200+ individually configured metrics across a 13-tool flow cell line, 5 engineering teams aligned around shared infrastructure, and a 55% scrap rate reduction that enabled the $200 genome.
                 </p>
                 <div className="project-tags">
-                  <span className="project-tag">Data</span>
+                  <span className="project-tag">Data Infrastructure</span>
                   <span className="project-tag">Analytics</span>
-                  <span className="project-tag">Manufacturing</span>
+                  <span className="project-tag">User Trust</span>
+                  <span className="project-tag">Automated Anomaly Detection</span>
                 </div>
                 <span className="project-origin">Industry project · Illumina</span>
                 <Link href="/manufacturing" className="project-link">View case study →</Link>

@@ -267,17 +267,17 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 /* ── Shared section typography ───────────────────────────────────── */
 .section-eyebrow {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .section-title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(2.2rem, 3.5vw, 3rem);
+  font-size: clamp(2.6rem, 4vw, 3.6rem);
   color: var(--ink);
   margin-bottom: 8px;
 }
@@ -350,13 +350,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
 .project-tag {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
-  border: 1px solid var(--accent);
-  padding: 4px 10px;
+  background: rgba(176, 138, 192, 0.12);
+  padding: 5px 13px;
+  border-radius: 100px;
 }
 .project-origin {
   font-size: 12px;
@@ -564,15 +565,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .cs-tag {
   font-family: var(--font-body);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 400;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ink-soft);
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.5);
-  display: inline-block;
-  padding: 5px 12px;
+  color: var(--accent);
+  background: rgba(176, 138, 192, 0.12);
+  padding: 5px 13px;
+  border-radius: 100px;
 }
 .cs-title {
   font-family: var(--font-display);
@@ -705,7 +705,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   line-height: 1.85;
   color: var(--ink-soft);
   margin-bottom: 10px;
-  max-width: 68ch;
 }
 .cs-placeholder {
   font-size: 14px;

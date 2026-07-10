@@ -6,7 +6,7 @@ const ALL_PROJECTS = [
     num: "01",
     title: "EasyStride",
     desc: "A shin-mounted wearable for female runners with injury history. Built for injury prevention over performance, emphasizing consistency as the strongest modifiable predictor of staying healthy.",
-    tags: ["Wearable", "IoT", "Health Tech"],
+    tags: ["Wearable", "Hardware", "Mobile App", "Product Strategy"],
     href: "/easystride",
   },
   {
@@ -14,7 +14,7 @@ const ALL_PROJECTS = [
     num: "02",
     title: "Apollo Dash",
     desc: "A decision-grade manufacturing analytics platform - 200+ individually configured metrics across a 13-tool flow cell line and a 55% scrap rate reduction that enabled the $200 genome.",
-    tags: ["Data", "Analytics", "Manufacturing"],
+    tags: ["Data Infrastructure", "Analytics", "User Trust", "Automated Anomaly Detection"],
     href: "/manufacturing",
   },
 ];
