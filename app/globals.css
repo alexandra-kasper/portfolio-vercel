@@ -19,6 +19,13 @@ html {
   scroll-behavior: smooth;
   font-size: 18px;
 }
+/* Scale down on large displays for better proportion */
+@media (min-width: 1600px) {
+  html { font-size: 17px; }
+}
+@media (min-width: 1920px) {
+  html { font-size: 15px; }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
@@ -578,7 +585,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .decision-title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
   color: var(--ink);
   line-height: 1.15;
 }
@@ -713,7 +720,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .cs-toc-list { list-style: none; }
 .cs-toc-list li { margin-bottom: 1px; }
 .cs-toc-list a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   color: var(--ink-soft);
   display: block;
@@ -728,13 +735,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .cs-content { padding: 52px 0 72px 52px; }
 .cs-section { margin-bottom: 52px; scroll-margin-top: 80px; }
 .cs-section-num {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.16em;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 .cs-section-title {
   font-family: var(--font-display);
@@ -746,7 +754,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .cs-section-subtitle {
   font-family: var(--font-display);
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(1.1rem, 1.8vw, 1.35rem);
   color: var(--ink-mid);
   margin-bottom: 28px;

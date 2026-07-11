@@ -32,7 +32,6 @@ export default function EasyStride() {
       <div className="site-content">
         <Nav />
 
-        {/* ── Hero ───────────────────────────────────────────── */}
         <section className="cs-hero">
           <div className="cs-hero-inner">
             <Link href="/" className="cs-back">← Back to portfolio</Link>
@@ -52,31 +51,28 @@ export default function EasyStride() {
           </div>
         </section>
 
-        {/* Gradient fade from hero into body */}
         <div className="cs-hero-gradient-fade" />
 
-        {/* ── Case study body ─────────────────────────────────── */}
         <div className="cs-body">
           <div className="cs-body-inner">
             <aside className="cs-toc">
               <p className="cs-toc-label">On this page</p>
               <ul className="cs-toc-list">
-                <li><a href="#problem">The Problem</a></li>
-                <li><a href="#market">Market Gap</a></li>
-                <li><a href="#positioning">Strategic Positioning</a></li>
-                <li><a href="#constraints">Constraints & Design Decisions</a></li>
-                <li><a href="#research">User Research</a></li>
-                <li><a href="#hardware">Hardware Design</a></li>
-                <li><a href="#signal">Signal Processing & Data Pipeline</a></li>
-                <li><a href="#tradeoffs">Key Tradeoffs</a></li>
+                <li><a href="#problem">01. The Problem</a></li>
+                <li><a href="#market">02. Market Gap</a></li>
+                <li><a href="#positioning">03. Strategic Positioning</a></li>
+                <li><a href="#constraints">04. Constraints & Design Decisions</a></li>
+                <li><a href="#research">05. User Research</a></li>
+                <li><a href="#hardware">06. Hardware Design</a></li>
+                <li><a href="#signal">07. Signal Processing & Data Pipeline</a></li>
+                <li><a href="#tradeoffs">08. Key Tradeoffs</a></li>
               </ul>
             </aside>
 
             <main className="cs-content">
 
-              {/* 01 — The Problem */}
               <section className="cs-section" id="problem">
-                <span className="cs-section-num">01 — The Problem</span>
+                <span className="cs-section-num">01</span>
                 <h2 className="cs-section-title">The Problem</h2>
                 <span className="cs-section-subtitle">
                   Injury-prone runners are negotiating 4 decisions daily
@@ -113,9 +109,8 @@ export default function EasyStride() {
                 </div>
               </section>
 
-              {/* 02 — Market Gap */}
               <section className="cs-section" id="market">
-                <span className="cs-section-num">02 — Market Gap</span>
+                <span className="cs-section-num">02</span>
                 <h2 className="cs-section-title">Market Gap</h2>
                 <span className="cs-section-subtitle">
                   Why nothing on the market solves this
@@ -156,9 +151,8 @@ export default function EasyStride() {
                 </div>
               </section>
 
-              {/* 03 — Strategic Positioning */}
               <section className="cs-section" id="positioning">
-                <span className="cs-section-num">03 — Strategic Positioning</span>
+                <span className="cs-section-num">03</span>
                 <h2 className="cs-section-title">Strategic Positioning</h2>
                 <div className="cs-sub">
                   <p>
@@ -171,16 +165,14 @@ export default function EasyStride() {
                 </div>
               </section>
 
-              {/* 04 — Constraints & Design Decisions */}
               <section className="cs-section" id="constraints">
-                <span className="cs-section-num">04 — Constraints & Design Decisions</span>
+                <span className="cs-section-num">04</span>
                 <h2 className="cs-section-title">Constraints & Design Decisions</h2>
                 <div className="cs-placeholder">Coming soon.</div>
               </section>
 
-              {/* 05 — User Research */}
               <section className="cs-section" id="research">
-                <span className="cs-section-num">05 — User Research</span>
+                <span className="cs-section-num">05</span>
                 <h2 className="cs-section-title">User Research</h2>
                 <div className="cs-sub">
                   <span className="cs-sub-label">Personas</span>
@@ -207,16 +199,14 @@ export default function EasyStride() {
                 </div>
               </section>
 
-              {/* 06 — Hardware Design */}
               <section className="cs-section" id="hardware">
-                <span className="cs-section-num">06 — Hardware Design</span>
+                <span className="cs-section-num">06</span>
                 <h2 className="cs-section-title">Hardware Design</h2>
                 <div className="cs-placeholder">Coming soon.</div>
               </section>
 
-              {/* 07 — Signal Processing & Data Pipeline */}
               <section className="cs-section" id="signal">
-                <span className="cs-section-num">07 — Signal Processing & Data Pipeline</span>
+                <span className="cs-section-num">07</span>
                 <h2 className="cs-section-title">Signal Processing & Data Pipeline</h2>
                 <div className="cs-sub">
                   <span className="cs-sub-label">Architecture</span>
@@ -231,9 +221,8 @@ export default function EasyStride() {
                 </div>
               </section>
 
-              {/* 08 — Key Tradeoffs */}
               <section className="cs-section" id="tradeoffs">
-                <span className="cs-section-num">08 — Key Tradeoffs</span>
+                <span className="cs-section-num">08</span>
                 <h2 className="cs-section-title">Key Tradeoffs</h2>
                 <div className="cs-placeholder">Coming soon.</div>
               </section>
