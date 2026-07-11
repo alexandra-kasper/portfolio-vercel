@@ -694,7 +694,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 @media (max-width: 640px) { .cs-stats-inner { grid-template-columns: repeat(2, 1fr); } }
 
-.cs-body { background: rgba(247, 245, 242, 0.06); }
+.cs-body { background: transparent; }
 .cs-body-inner {
   max-width: var(--max);
   margin: 0 auto;
