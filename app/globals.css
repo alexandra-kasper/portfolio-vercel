@@ -55,35 +55,31 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   filter: blur(80px);
 }
 .aurora-blob-1 {
-  /* top-left anchor, bleeds off corner */
   width: 720px; height: 640px;
   background: #ede4f5;
   top: -80px; left: -120px;
-  opacity: 0.28;
+  opacity: 0.40;
   animation: blob-float-1 14s ease-in-out infinite;
 }
 .aurora-blob-2 {
-  /* mid-right, 28vh down */
   width: 580px; height: 500px;
   background: #f7dce8;
   top: 28vh; right: -40px;
-  opacity: 0.26;
+  opacity: 0.36;
   animation: blob-float-2 18s ease-in-out infinite;
 }
 .aurora-blob-3 {
-  /* lower-left */
   width: 640px; height: 560px;
   background: #fae4d8;
   bottom: -80px; left: 10%;
-  opacity: 0.26;
+  opacity: 0.36;
   animation: blob-float-3 22s ease-in-out infinite;
 }
 .aurora-blob-4 {
-  /* upper-right cluster with blob-2 */
   width: 580px; height: 500px;
   background: #fdeee4;
   top: 18vh; right: 18%;
-  opacity: 0.28;
+  opacity: 0.38;
   animation: blob-float-1 26s ease-in-out infinite reverse;
 }
 @keyframes blob-float-1 {
@@ -535,9 +531,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .footer-links a:hover { color: rgba(255,255,255,0.7); }
 
-/* ── Accent highlighted text (amber) ────────────────────────────── */
+/* ── Accent highlighted text (deep purple) ──────────────────────── */
 .accent-text {
-  color: #b07830;
+  color: #7a3d9e;
   font-weight: 500;
 }
 
