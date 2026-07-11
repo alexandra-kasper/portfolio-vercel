@@ -22,7 +22,7 @@ export default function Home() {
                 high-stakes world of genomics manufacturing. I care about
                 lowering the mental load behind data-driven decisions, earning
                 real trust with users and stakeholders, and designing IoT
-                hardware that is rooted in user needs. Currently I&apos;m building
+                hardware that is rooted in user needs. I&apos;m currently building
                 an IMU-based wearable for running injury prevention, and loving
                 every step of the process.
               </p>
@@ -121,9 +121,12 @@ export default function Home() {
                 <span className="accent-text">app design</span> have all been
                 part of the same creative process. Product management lets me
                 step further into everything I value: the collaboration satisfies
-                my need for community, the constant change feels like adventure,
-                and building for real user needs means the impact is tangible
-                and immediate.
+                my need for <span className="accent-text">community</span>, the
+                constant change feels like{" "}
+                <span className="accent-text">adventure</span>, and building for
+                consumer wellness means the{" "}
+                <span className="accent-text">impact</span> is real and
+                immediate.
               </p>
             </div>
           </div>
