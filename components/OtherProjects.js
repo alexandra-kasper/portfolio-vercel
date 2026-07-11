@@ -5,7 +5,7 @@ const ALL_PROJECTS = [
     slug: "easystride",
     num: "01",
     title: "EasyStride",
-    desc: "A shin-mounted wearable for female runners with injury history. Built for injury prevention over performance, emphasizing consistency as the strongest modifiable predictor of staying healthy.",
+    desc: "A shin-mounted wearable for runners with injury history. Built for injury prevention over performance, emphasizing consistency as the strongest modifiable predictor of staying healthy.",
     tags: ["Wearable", "Hardware", "Mobile App", "Product Strategy"],
     href: "/easystride",
   },

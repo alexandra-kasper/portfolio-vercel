@@ -360,13 +360,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   border-radius: 100px;
 }
 .project-origin {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 4px 10px;
-  border: 1px solid var(--border);
   color: var(--ink-soft);
+  background: rgba(118, 118, 118, 0.1);
+  padding: 5px 13px;
+  border-radius: 100px;
   align-self: flex-start;
 }
 .project-link {
@@ -536,7 +537,68 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .footer-links a:hover { color: rgba(255,255,255,0.7); }
 
-/* ── Case study pages ────────────────────────────────────────────── */
+/* ── Accent highlighted text (purple) ───────────────────────────── */
+.accent-text {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ── Four decisions banner (EasyStride) ─────────────────────────── */
+.four-decisions {
+  padding: 52px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 52px;
+}
+.four-decisions-intro {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+  max-width: 60ch;
+}
+.decision-list { display: flex; flex-direction: column; }
+.decision-row {
+  display: grid;
+  grid-template-columns: 36px 1fr 1fr;
+  gap: 16px;
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+.decision-row:first-child { border-top: 1px solid var(--border); }
+.decision-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--accent);
+  line-height: 1;
+}
+.decision-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  color: var(--ink);
+  line-height: 1.15;
+}
+.decision-sub {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.four-decisions-closing {
+  margin-top: 28px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--ink-mid);
+  max-width: 72ch;
+}
+@media (max-width: 640px) {
+  .decision-row { grid-template-columns: 28px 1fr; }
+  .decision-sub { grid-column: 2 / -1; }
+}
 .cs-hero { padding: 56px 0 64px; }
 .cs-hero-inner { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
 
@@ -677,7 +739,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .cs-section-title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
   color: var(--ink);
   margin-bottom: 20px;
 }
@@ -700,7 +762,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   margin-bottom: 12px;
 }
 .cs-sub p {
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.85;
   color: var(--ink-soft);

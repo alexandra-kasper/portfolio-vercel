@@ -21,12 +21,10 @@ export default function Home() {
                 My background is in engineering, built in the fast-paced,
                 high-stakes world of genomics manufacturing. I care about
                 lowering the mental load behind data-driven decisions, earning
-                real trust with users and stakeholders, and designing hardware
-                that holds up in the real world. I&apos;m now pursuing an
-                MBA/MEng (Materials Science and Engineering) at Berkeley Haas
-                to pair that foundation with product strategy and customer
-                understanding, along with technical depth into the sensors
-                themselves.
+                real trust with users and stakeholders, and designing IoT
+                hardware that is rooted in user needs. Currently I&apos;m building
+                an IMU-based wearable for running injury prevention, and loving
+                every step of the process.
               </p>
               <Link href="#work" className="hero-cta">View selected work</Link>
             </div>
@@ -45,7 +43,6 @@ export default function Home() {
           <div className="wrap">
             <p className="section-eyebrow">About</p>
 
-            {/* Values - three column display type */}
             <div className="about-values">
               <div className="about-value">
                 <div className="about-value-bar" />
@@ -65,14 +62,20 @@ export default function Home() {
               <p className="about-sub-label">Personal</p>
               <p>
                 Community, Adventure, and Meaningful Work. These are the values
-                that have always guided me. My loved ones come first - from June
-                2024 to July 2026, that meant caring for my mother through stage
-                4 lung cancer. Adventure means walking into uncertainty wherever
+                that have always guided me. The people who comprise my community
+                - <span className="accent-text">friends, family, classmates,
+                and coworkers</span> - are always my number one priority. From
+                June 2024 to July 2026, that meant caring for my mother through
+                stage 4 lung cancer. Throughout my career, it meant hosting
+                celebrations for dozens of coworkers&apos; milestones. Adventure
+                means <span className="accent-text">walking into uncertainty</span> wherever
                 I find it, whether that&apos;s scuba diving, backcountry camping,
-                or a new project at work. And meaningful work, to me, has three
-                parts: it has to have real impact on people&apos;s lives, it has
-                to be technically challenging, and it has to let me be creative
-                - that pull toward creativity is what first drew me into product
+                sitting down at a pottery wheel, or starting a new project at
+                work. And meaningful work, to me, has three parts: it has to
+                have <span className="accent-text">real impact on people&apos;s
+                lives</span>, it has to be <span className="accent-text">technically
+                challenging</span>, and it has to let me be <span className="accent-text">creative</span> - that
+                pull toward creativity is what first drew me into product
                 management.
               </p>
             </div>
@@ -80,19 +83,25 @@ export default function Home() {
             <div className="about-subsection">
               <p className="about-sub-label">Professional</p>
               <p>
-                Six years in the genomics space gave me technically rich, deeply
-                cross-functional work - engineering, quality, data science,
-                product - without ever holding direct authority over any of it.
-                I never quite felt like a typical engineer; I gravitated instead
-                toward organizing and synthesizing complex ideas to get teams
-                aligned around a shared spec or charter, work that spanned
-                mechanical design, metrology, data analysis, and more. That
-                instinct led me to become the sole PM on Illumina&apos;s NovaSeq X
-                manufacturing data platform, a project that met real resistance
-                early on and eventually reached 100% adoption. Coming up with
-                creative solutions to alarm fatigue with process engineers was
-                the first time I felt that same creative spark at work that
-                I&apos;d only ever felt in my hobbies.
+                Six years in the genomics space gave me technically rich, deeply{" "}
+                <span className="accent-text">cross-functional work</span> -
+                collaborating with engineering, quality, data science, and
+                product - <span className="accent-text">without ever holding
+                direct authority</span> over the teams I led. I never quite felt
+                like a typical engineer; I gravitated instead toward organizing
+                and synthesizing complex ideas to{" "}
+                <span className="accent-text">get teams aligned</span> around a
+                shared spec or charter, work that spanned{" "}
+                <span className="accent-text">mechanical design</span>,{" "}
+                <span className="accent-text">metrology</span>,{" "}
+                <span className="accent-text">data analysis</span>, and more.
+                That instinct led me to become the sole PM on Illumina&apos;s
+                NovaSeq X manufacturing data platform, a project that met real
+                resistance early on and eventually reached 100% adoption. Coming
+                up with <span className="accent-text">creative solutions to
+                alarm fatigue</span> with process engineers was the first time I
+                felt that same creative spark at work that I&apos;d only ever felt
+                in my hobbies.
               </p>
             </div>
 
@@ -100,17 +109,21 @@ export default function Home() {
               <p className="about-sub-label">Why Product Management</p>
               <p>
                 Nothing gets my creative juices flowing like someone telling me
-                they have a problem I know I can solve - it&apos;s the same instinct
-                behind every bowl, pair of earrings, or painting I&apos;ve made for
-                someone just to see them smile. I&apos;ve been chasing that feeling
-                deeper ever since, most recently through EasyStride (linked
-                below), where product positioning, competitive analysis, user
-                interviews, hardware prototyping, and app design have all been
+                they have a want or need I know I can fulfill - it&apos;s the same
+                instinct behind every cup, bowl, or serving platter I&apos;ve
+                crafted from clay. I&apos;ve been leaning into the joy I found with
+                product work at Illumina through{" "}
+                <span className="accent-text">EasyStride</span> (linked below),
+                where <span className="accent-text">product positioning</span>,{" "}
+                <span className="accent-text">competitive analysis</span>,{" "}
+                <span className="accent-text">user interviews</span>,{" "}
+                <span className="accent-text">hardware prototyping</span>, and{" "}
+                <span className="accent-text">app design</span> have all been
                 part of the same creative process. Product management lets me
                 step further into everything I value: the collaboration satisfies
                 my need for community, the constant change feels like adventure,
-                and building for consumer wellness means the impact is real and
-                immediate.
+                and building for real user needs means the impact is tangible
+                and immediate.
               </p>
             </div>
           </div>
@@ -141,7 +154,11 @@ export default function Home() {
                 </Link>
                 <p className="project-desc" style={{fontStyle:'italic', marginBottom:'4px', color:'var(--ink-mid)'}}>Wearable Injury Prevention for Running</p>
                 <p className="project-desc">
-                  A shin-mounted wearable for female runners with injury history. Built for injury prevention over performance, it emphasizes consistency - the strongest modifiable predictor of staying healthy - and is designed to motivate and reward progress, not just measure it.
+                  A shin-mounted wearable for runners with injury history. Built
+                  for injury prevention over performance, it emphasizes
+                  consistency - the strongest modifiable predictor of staying
+                  healthy - and is designed to motivate and reward progress, not
+                  just measure it.
                 </p>
                 <div className="project-tags">
                   <span className="project-tag">Wearable</span>
@@ -149,7 +166,7 @@ export default function Home() {
                   <span className="project-tag">Mobile App</span>
                   <span className="project-tag">Product Strategy</span>
                 </div>
-                <span className="project-origin">Independent project</span>
+                <span className="project-origin">Independent Project</span>
                 <Link href="/easystride" className="project-link">View case study →</Link>
               </div>
             </div>
@@ -180,7 +197,10 @@ export default function Home() {
                   <span className="project-tag">User Trust</span>
                   <span className="project-tag">Automated Anomaly Detection</span>
                 </div>
-                <span className="project-origin">Industry project · Illumina</span>
+                <div className="project-tags" style={{marginTop: 0}}>
+                  <span className="project-origin">Industry Project</span>
+                  <span className="project-origin">Illumina</span>
+                </div>
                 <Link href="/manufacturing" className="project-link">View case study →</Link>
               </div>
             </div>
