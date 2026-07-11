@@ -278,7 +278,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .section-title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(2.6rem, 4vw, 3.6rem);
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
   color: var(--ink);
   margin-bottom: 8px;
 }
@@ -538,10 +538,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .footer-links a:hover { color: rgba(255,255,255,0.7); }
 
-/* ── Accent highlighted text (deep purple) ──────────────────────── */
+/* ── Accent highlighted text (bold, not colored) ─────────────────── */
 .accent-text {
-  color: #7a3d9e;
   font-weight: 500;
+  color: inherit;
 }
 
 /* ── Hero to body gradient fade ─────────────────────────────────── */
@@ -554,7 +554,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 /* ── Four decisions banner (EasyStride) ─────────────────────────── */
 .four-decisions {
   padding: 28px 0 40px;
-  border-bottom: 1px solid var(--border);
   margin-bottom: 48px;
 }
 .four-decisions-intro {
@@ -575,10 +574,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .decision-row:first-child { border-top: 1px solid var(--border); }
 .decision-num {
-  font-family: var(--font-display);
-  font-size: 2rem;
+  font-family: var(--font-body);
+  font-size: 1.4rem;
   font-weight: 300;
-  font-style: italic;
   color: var(--accent);
   line-height: 1;
 }
@@ -606,6 +604,86 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .decision-row { grid-template-columns: 28px 1fr; }
   .decision-sub { grid-column: 2 / -1; }
 }
+
+/* ── User Research specific elements ────────────────────────────── */
+.cs-persona {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+.cs-persona:first-child { border-top: 1px solid var(--border); }
+.cs-persona-name {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.cs-persona-desc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--ink-mid);
+  margin: 0;
+}
+.cs-list {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0;
+}
+.cs-list li {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--ink-mid);
+  padding: 8px 0 8px 20px;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+}
+.cs-list li:first-child { border-top: 1px solid var(--border); }
+.cs-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.cs-list li strong { font-weight: 500; color: var(--ink); }
+.cs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+.cs-table th {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-align: left;
+  padding: 10px 16px 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.cs-table td {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--ink-mid);
+  padding: 14px 16px 14px 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.cs-table tr:last-child td { border-bottom: none; }
+.cs-table-note {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-top: 12px;
+}
+
 .cs-hero { padding: 56px 0 64px; }
 .cs-hero-inner { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
 

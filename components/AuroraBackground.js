@@ -13,11 +13,10 @@ export default function AuroraBackground() {
       "(prefers-reduced-motion: reduce)"
     ).matches;
 
-    // Max overlay opacity - maps blob apparent intensity to 0.26-0.31 range
-    const MAX_OVERLAY = 0.38;
+    // Final overlay opacity - maps blob apparent intensity to ~0.25-0.31
+    const MAX_OVERLAY = 0.50;
 
     function getHeroBottom() {
-      // Works for both main page (.hero) and case study pages (.cs-hero)
       const hero =
         document.querySelector(".cs-hero") ||
         document.querySelector(".hero");
@@ -29,8 +28,10 @@ export default function AuroraBackground() {
       const heroBottom = getHeroBottom();
       const scrollY = window.scrollY;
 
-      // Progress: 0 at top of page, 1 when first section is reached
-      const progress = Math.min(1, Math.max(0, scrollY / heroBottom));
+      // Fade completes at 60% of hero height so The Problem section
+      // is already revealed against the faded background
+      const fadeDistance = heroBottom * 0.6;
+      const progress = Math.min(1, Math.max(0, scrollY / fadeDistance));
       overlay.style.opacity = (progress * MAX_OVERLAY).toString();
 
       // Parallax on blobs (skipped if reduced motion)
@@ -45,7 +46,7 @@ export default function AuroraBackground() {
 
     window.addEventListener("scroll", update, { passive: true });
     window.addEventListener("resize", update, { passive: true });
-    update(); // set initial state
+    update();
 
     return () => {
       window.removeEventListener("scroll", update);
@@ -55,15 +56,12 @@ export default function AuroraBackground() {
 
   return (
     <>
-      {/* Blobs - fixed, always at their set opacity */}
       <div className="aurora" ref={blobsRef} aria-hidden="true">
         <div className="aurora-blob aurora-blob-1" />
         <div className="aurora-blob aurora-blob-2" />
         <div className="aurora-blob aurora-blob-3" />
         <div className="aurora-blob aurora-blob-4" />
       </div>
-
-      {/* Scroll-driven overlay - fades the aurora as user scrolls past the hero */}
       <div
         ref={overlayRef}
         aria-hidden="true"
