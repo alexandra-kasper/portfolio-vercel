@@ -32,6 +32,7 @@ export default function EasyStride() {
       <div className="site-content">
         <Nav />
 
+        {/* ── Hero ───────────────────────────────────────────── */}
         <section className="cs-hero">
           <div className="cs-hero-inner">
             <Link href="/" className="cs-back">← Back to portfolio</Link>
@@ -51,48 +52,16 @@ export default function EasyStride() {
           </div>
         </section>
 
-        {/* ── Four Decisions Banner ───────────────────────────── */}
-        <div className="wrap">
-          <div className="four-decisions">
-            <p className="four-decisions-intro">
-              The 4 decisions injury-prone runners are negotiating daily
-            </p>
-            <div className="decision-list">
-              <div className="decision-row">
-                <span className="decision-num">1</span>
-                <span className="decision-title">Run vs. Rest</span>
-                <span className="decision-sub">When to push and when to hold back</span>
-              </div>
-              <div className="decision-row">
-                <span className="decision-num">2</span>
-                <span className="decision-title">Volume, Pace & Terrain</span>
-                <span className="decision-sub">How much load the body can handle today</span>
-              </div>
-              <div className="decision-row">
-                <span className="decision-num">3</span>
-                <span className="decision-title">Gait & Form</span>
-                <span className="decision-sub">Whether form is contributing to pain and whether it should be corrected</span>
-              </div>
-              <div className="decision-row">
-                <span className="decision-num">4</span>
-                <span className="decision-title">Cross-Training & Recovery</span>
-                <span className="decision-sub">What else to do to stay healthy between runs</span>
-              </div>
-            </div>
-            <p className="four-decisions-closing">
-              EasyStride makes these decisions easier by tracking an
-              individual&apos;s biomechanical data, comparing it to baseline,
-              providing recommendations, and partnering with the user on
-              training plans.
-            </p>
-          </div>
-        </div>
+        {/* Gradient fade from hero into body */}
+        <div className="cs-hero-gradient-fade" />
 
+        {/* ── Case study body ─────────────────────────────────── */}
         <div className="cs-body">
           <div className="cs-body-inner">
             <aside className="cs-toc">
               <p className="cs-toc-label">On this page</p>
               <ul className="cs-toc-list">
+                <li><a href="#problem">The Problem</a></li>
                 <li><a href="#market">Market Gap</a></li>
                 <li><a href="#positioning">Strategic Positioning</a></li>
                 <li><a href="#constraints">Constraints & Design Decisions</a></li>
@@ -105,9 +74,52 @@ export default function EasyStride() {
 
             <main className="cs-content">
 
+              {/* 01 — The Problem */}
+              <section className="cs-section" id="problem">
+                <span className="cs-section-num">01 — The Problem</span>
+                <h2 className="cs-section-title">The Problem</h2>
+                <span className="cs-section-subtitle">
+                  Injury-prone runners are negotiating 4 decisions daily
+                </span>
+                <div className="four-decisions">
+                  <div className="decision-list">
+                    <div className="decision-row">
+                      <span className="decision-num">1</span>
+                      <span className="decision-title">Run vs. Rest</span>
+                      <span className="decision-sub">When to push and when to hold back</span>
+                    </div>
+                    <div className="decision-row">
+                      <span className="decision-num">2</span>
+                      <span className="decision-title">Volume, Pace & Terrain</span>
+                      <span className="decision-sub">How much load the body can handle today</span>
+                    </div>
+                    <div className="decision-row">
+                      <span className="decision-num">3</span>
+                      <span className="decision-title">Gait & Form</span>
+                      <span className="decision-sub">Whether form is contributing to pain and whether it should be corrected</span>
+                    </div>
+                    <div className="decision-row">
+                      <span className="decision-num">4</span>
+                      <span className="decision-title">Cross-Training & Recovery</span>
+                      <span className="decision-sub">What else to do to stay healthy between runs</span>
+                    </div>
+                  </div>
+                  <p className="four-decisions-closing">
+                    EasyStride makes these decisions easier by tracking an
+                    individual&apos;s biomechanical data, comparing it to baseline,
+                    providing recommendations, and partnering with the user on
+                    training plans.
+                  </p>
+                </div>
+              </section>
+
+              {/* 02 — Market Gap */}
               <section className="cs-section" id="market">
-                <span className="cs-section-num">01 — Market Gap</span>
-                <h2 className="cs-section-title">Why nothing on the market solves this</h2>
+                <span className="cs-section-num">02 — Market Gap</span>
+                <h2 className="cs-section-title">Market Gap</h2>
+                <span className="cs-section-subtitle">
+                  Why nothing on the market solves this
+                </span>
                 <div className="cs-sub">
                   <p>
                     The most actionable, modifiable factor in injury prevention
@@ -144,8 +156,9 @@ export default function EasyStride() {
                 </div>
               </section>
 
+              {/* 03 — Strategic Positioning */}
               <section className="cs-section" id="positioning">
-                <span className="cs-section-num">02 — Strategic Positioning</span>
+                <span className="cs-section-num">03 — Strategic Positioning</span>
                 <h2 className="cs-section-title">Strategic Positioning</h2>
                 <div className="cs-sub">
                   <p>
@@ -158,14 +171,16 @@ export default function EasyStride() {
                 </div>
               </section>
 
+              {/* 04 — Constraints & Design Decisions */}
               <section className="cs-section" id="constraints">
-                <span className="cs-section-num">03 — Constraints & Design Decisions</span>
+                <span className="cs-section-num">04 — Constraints & Design Decisions</span>
                 <h2 className="cs-section-title">Constraints & Design Decisions</h2>
                 <div className="cs-placeholder">Coming soon.</div>
               </section>
 
+              {/* 05 — User Research */}
               <section className="cs-section" id="research">
-                <span className="cs-section-num">04 — User Research</span>
+                <span className="cs-section-num">05 — User Research</span>
                 <h2 className="cs-section-title">User Research</h2>
                 <div className="cs-sub">
                   <span className="cs-sub-label">Personas</span>
@@ -184,22 +199,24 @@ export default function EasyStride() {
                   <h3 className="cs-sub-title">Trust in data accuracy, not just privacy</h3>
                   <p>
                     The central design tension is not whether runners will share
-                    their data - it&apos;s whether they&apos;ll believe what the data says.
-                    A runner who has been injured once is already skeptical of
-                    anything that sounds like overconfidence. The product has to
-                    earn trust before it can change behavior.
+                    their data - it&apos;s whether they&apos;ll believe what the data
+                    says. A runner who has been injured once is already skeptical
+                    of anything that sounds like overconfidence. The product has
+                    to earn trust before it can change behavior.
                   </p>
                 </div>
               </section>
 
+              {/* 06 — Hardware Design */}
               <section className="cs-section" id="hardware">
-                <span className="cs-section-num">05 — Hardware Design</span>
+                <span className="cs-section-num">06 — Hardware Design</span>
                 <h2 className="cs-section-title">Hardware Design</h2>
                 <div className="cs-placeholder">Coming soon.</div>
               </section>
 
+              {/* 07 — Signal Processing & Data Pipeline */}
               <section className="cs-section" id="signal">
-                <span className="cs-section-num">06 — Signal Processing & Data Pipeline</span>
+                <span className="cs-section-num">07 — Signal Processing & Data Pipeline</span>
                 <h2 className="cs-section-title">Signal Processing & Data Pipeline</h2>
                 <div className="cs-sub">
                   <span className="cs-sub-label">Architecture</span>
@@ -214,8 +231,9 @@ export default function EasyStride() {
                 </div>
               </section>
 
+              {/* 08 — Key Tradeoffs */}
               <section className="cs-section" id="tradeoffs">
-                <span className="cs-section-num">07 — Key Tradeoffs</span>
+                <span className="cs-section-num">08 — Key Tradeoffs</span>
                 <h2 className="cs-section-title">Key Tradeoffs</h2>
                 <div className="cs-placeholder">Coming soon.</div>
               </section>
