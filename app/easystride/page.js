@@ -21,6 +21,12 @@ export default function EasyStride() {
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
+  function openLightbox(src) {
+    document.getElementById("lb-img").src = src;
+    document.getElementById("lightbox").classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+
   function closeLightbox() {
     document.getElementById("lightbox").classList.remove("open");
     document.body.style.overflow = "";
@@ -164,6 +170,18 @@ export default function EasyStride() {
                     detection of changes in their baseline form that could
                     increase injury risk.
                   </p>
+                </div>
+                <div
+                  className="cs-img-wrap"
+                  onClick={() => openLightbox("https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/app_design_display.png")}
+                  style={{ cursor: "zoom-in" }}
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/app_design_display.png"
+                    alt="EasyStride app UI"
+                    style={{ width: "100%", display: "block" }}
+                  />
+                  <span className="cs-img-hint">Click to zoom</span>
                 </div>
               </section>
 
