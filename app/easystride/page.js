@@ -34,7 +34,7 @@ export default function EasyStride() {
 
   return (
     <>
-      <AuroraBackground />
+      <AuroraBackground fadeOnScroll />
       <div className="site-content">
         <Nav />
 
@@ -67,10 +67,6 @@ export default function EasyStride() {
                 <li><a href="#market">02. Market Gap</a></li>
                 <li><a href="#positioning">03. Strategic Positioning</a></li>
                 <li><a href="#research">04. User Research</a></li>
-                <li><a href="#constraints">05. Constraints & Design Decisions</a></li>
-                <li><a href="#hardware">06. Hardware Design</a></li>
-                <li><a href="#signal">07. Signal Processing & Data Pipeline</a></li>
-                <li><a href="#tradeoffs">08. Key Tradeoffs</a></li>
               </ul>
             </aside>
 
@@ -81,7 +77,8 @@ export default function EasyStride() {
                 <span className="cs-section-num">01</span>
                 <h2 className="cs-section-title">The Problem</h2>
                 <span className="cs-section-subtitle">
-                  Injury-prone runners are negotiating 4 decisions daily
+                  Injury-prone runners are negotiating 4 decisions daily without
+                  adequate data, translation, or guidance
                 </span>
                 <div className="four-decisions">
                   <div className="decision-list">
@@ -341,43 +338,6 @@ export default function EasyStride() {
                 </div>
               </section>
 
-              {/* 05 — Constraints & Design Decisions */}
-              <section className="cs-section" id="constraints">
-                <span className="cs-section-num">05</span>
-                <h2 className="cs-section-title">Constraints & Design Decisions</h2>
-                <div className="cs-placeholder">Coming soon.</div>
-              </section>
-
-              {/* 06 — Hardware Design */}
-              <section className="cs-section" id="hardware">
-                <span className="cs-section-num">06</span>
-                <h2 className="cs-section-title">Hardware Design</h2>
-                <div className="cs-placeholder">Coming soon.</div>
-              </section>
-
-              {/* 07 — Signal Processing & Data Pipeline */}
-              <section className="cs-section" id="signal">
-                <span className="cs-section-num">07</span>
-                <h2 className="cs-section-title">Signal Processing & Data Pipeline</h2>
-                <div className="cs-sub">
-                  <span className="cs-sub-label">Architecture</span>
-                  <h3 className="cs-sub-title">Raw IMU → filtering → sensor fusion → gait metrics</h3>
-                  <p>
-                    Every metric the user sees traces back through a documented
-                    signal chain. Raw accelerometer and gyroscope data moves
-                    through a filtering and calibration stage, then sensor fusion,
-                    before it becomes a number on the dashboard. Nothing on screen
-                    is estimated without a real biomechanical signal behind it.
-                  </p>
-                </div>
-              </section>
-
-              {/* 08 — Key Tradeoffs */}
-              <section className="cs-section" id="tradeoffs">
-                <span className="cs-section-num">08</span>
-                <h2 className="cs-section-title">Key Tradeoffs</h2>
-                <div className="cs-placeholder">Coming soon.</div>
-              </section>
 
             </main>
           </div>

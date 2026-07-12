@@ -33,7 +33,7 @@ export default function Manufacturing() {
 
   return (
     <>
-      <AuroraBackground />
+      <AuroraBackground fadeOnScroll />
       <div className="site-content">
         <Nav />
 

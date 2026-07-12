@@ -176,7 +176,7 @@ export default function Home() {
                   <span className="project-tag">Product Strategy</span>
                 </div>
                 <span className="project-origin">Independent Project</span>
-                <Link href="/easystride" className="project-link">View case study →</Link>
+                <Link href="/easystride" className="project-link">View product overview →</Link>
               </div>
             </div>
 
@@ -210,7 +210,7 @@ export default function Home() {
                   <span className="project-origin">Industry Project</span>
                   <span className="project-origin">Illumina</span>
                 </div>
-                <Link href="/manufacturing" className="project-link">View case study →</Link>
+                <Link href="/manufacturing" className="project-link">View product overview →</Link>
               </div>
             </div>
           </div>

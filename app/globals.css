@@ -84,9 +84,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .aurora-blob-4 {
   width: 580px; height: 500px;
-  background: #fce0cc;
+  background: #fbd9a8;
   top: 18vh; right: 18%;
-  opacity: 0.46;
+  opacity: 0.60;
   animation: blob-float-1 26s ease-in-out infinite reverse;
 }
 @keyframes blob-float-1 {
@@ -553,8 +553,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 /* ── Four decisions banner (EasyStride) ─────────────────────────── */
 .four-decisions {
-  padding: 28px 0 40px;
-  margin-bottom: 48px;
+  padding: 28px 0 0;
+  margin-bottom: 0;
 }
 .four-decisions-intro {
   font-size: 1rem;
@@ -588,14 +588,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   line-height: 1.15;
 }
 .decision-sub {
-  font-size: 0.9rem;
+  font-size: 1.02rem;
   font-weight: 300;
   color: var(--ink-soft);
   line-height: 1.5;
 }
 .four-decisions-closing {
   margin-top: 28px;
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-weight: 300;
   line-height: 1.8;
   color: var(--ink-mid);
@@ -614,12 +614,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .cs-persona-name {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   color: var(--ink);
   margin-bottom: 6px;
 }
 .cs-persona-desc {
-  font-size: 0.9rem;
+  font-size: 1.02rem;
   font-weight: 300;
   line-height: 1.75;
   color: var(--ink-mid);
@@ -631,7 +631,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   padding: 0;
 }
 .cs-list li {
-  font-size: 0.95rem;
+  font-size: 1.07rem;
   font-weight: 300;
   line-height: 1.75;
   color: var(--ink-mid);
@@ -668,7 +668,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   border-bottom: 1px solid var(--border);
 }
 .cs-table td {
-  font-size: 0.9rem;
+  font-size: 1.02rem;
   font-weight: 300;
   line-height: 1.7;
   color: var(--ink-mid);
@@ -811,7 +811,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .cs-toc-list a.active { color: var(--accent); border-left-color: var(--accent); }
 
 .cs-content { padding: 52px 0 72px 52px; }
-.cs-section { margin-bottom: 52px; scroll-margin-top: 80px; }
+.cs-section { margin-bottom: 104px; scroll-margin-top: 80px; }
 .cs-section-num {
   font-family: var(--font-body);
   font-size: 12px;
@@ -842,9 +842,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .cs-sub { margin-bottom: 36px; }
 .cs-sub:last-child { margin-bottom: 0; }
 .cs-sub-label {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.16em;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
   display: block;
@@ -858,14 +858,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   margin-bottom: 12px;
 }
 .cs-sub p {
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-weight: 300;
   line-height: 1.85;
   color: var(--ink-mid);
   margin-bottom: 10px;
 }
 .cs-placeholder {
-  font-size: 14px;
+  font-size: 1.02rem;
   font-weight: 300;
   line-height: 1.75;
   color: var(--ink-mid);
