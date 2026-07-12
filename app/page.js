@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextImage from "next/image";
 import AuroraBackground from "../components/AuroraBackground";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
@@ -143,9 +144,14 @@ export default function Home() {
             <div className="project-row">
               <Link href="/easystride" className="project-img-link">
                 <div className="project-img-wrap">
-                  <img
+                  <NextImage
                     src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/app_design_display.png"
                     alt="EasyStride app interface"
+                    width={1600}
+                    height={1000}
+                    sizes="(max-width: 740px) 100vw, 50vw"
+                    style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "12px" }}
+                    priority
                   />
                 </div>
               </Link>
