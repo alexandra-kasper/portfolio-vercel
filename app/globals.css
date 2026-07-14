@@ -86,7 +86,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   width: 580px; height: 500px;
   background: #fae3b8;
   top: 18vh; right: 18%;
-  opacity: 0.60;
+  opacity: 0.53;
   animation: blob-float-1 26s ease-in-out infinite reverse;
 }
 @keyframes blob-float-1 {
