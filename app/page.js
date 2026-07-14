@@ -150,7 +150,7 @@ export default function Home() {
                     width={1600}
                     height={1000}
                     sizes="(max-width: 740px) 100vw, 50vw"
-                    style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "12px" }}
+                    style={{ width: "100%", height: "100%", objectFit: "contain", borderRadius: "12px" }}
                     priority
                   />
                 </div>

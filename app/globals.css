@@ -84,9 +84,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .aurora-blob-4 {
   width: 580px; height: 500px;
-  background: #fbd9a8;
+  background: #fce0cc;
   top: 18vh; right: 18%;
-  opacity: 0.46;
+  opacity: 0.60;
   animation: blob-float-1 26s ease-in-out infinite reverse;
 }
 @keyframes blob-float-1 {
@@ -316,7 +316,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   box-shadow: inset 0 0 60px 20px var(--paper);
 }
 .project-img-link:hover .project-img-wrap { border-color: var(--accent); }
-.project-img-wrap img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+.project-img-wrap img { width: 100%; height: 100%; object-fit: contain; border-radius: 12px; }
 .project-img-placeholder {
   font-size: 11px;
   font-weight: 400;
@@ -877,6 +877,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .cs-img-wrap {
   position: relative;
   border: 1px solid var(--border);
+  border-radius: 12px;
   cursor: zoom-in;
   overflow: hidden;
   margin-bottom: 6px;
