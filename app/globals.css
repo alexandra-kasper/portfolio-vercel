@@ -84,7 +84,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .aurora-blob-4 {
   width: 580px; height: 500px;
-  background: #fce0cc;
+  background: #fae3b8;
   top: 18vh; right: 18%;
   opacity: 0.60;
   animation: blob-float-1 26s ease-in-out infinite reverse;

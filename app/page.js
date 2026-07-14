@@ -66,12 +66,12 @@ export default function Home() {
                 that have always guided me. The people who comprise my community
                 - <span className="accent-text">friends, family, classmates,
                 and coworkers</span> - are always my number one priority. From
-                June 2024 to July 2026, that meant caring for my mother through
-                stage 4 lung cancer. Throughout my career, it meant hosting
+                March 2025 to July 2026, that meant caring for my mother through
+                stage 4 lung cancer. Throughout my career, it&apos;s meant hosting
                 celebrations for dozens of coworkers&apos; milestones. Adventure
                 means <span className="accent-text">walking into uncertainty</span> wherever
                 I find it, whether that&apos;s scuba diving, backcountry camping,
-                sitting down at a pottery wheel, or starting a new project at
+                sitting down at my pottery wheel, or starting a new project at
                 work. And meaningful work, to me, has three parts: it has to
                 have <span className="accent-text">real impact on people&apos;s
                 lives</span>, it has to be <span className="accent-text">technically
