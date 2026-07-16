@@ -1,5 +1,6 @@
 import Link from "next/link";
 import NextImage from "next/image";
+import TrackedLink from "../components/TrackedLink";
 import AuroraBackground from "../components/AuroraBackground";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
@@ -142,7 +143,7 @@ export default function Home() {
 
             {/* EasyStride */}
             <div className="project-row">
-              <Link href="/easystride" className="project-img-link">
+              <TrackedLink href="/easystride" project="easystride" location="image" className="project-img-link">
                 <div className="project-img-wrap">
                   <NextImage
                     src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/app_design_display.png"
@@ -154,13 +155,13 @@ export default function Home() {
                     priority
                   />
                 </div>
-              </Link>
+              </TrackedLink>
               <div className="project-text">
                 <span className="project-num">01</span>
                 <div className="project-bar" />
-                <Link href="/easystride" className="project-title-link">
+                <TrackedLink href="/easystride" project="easystride" location="title" className="project-title-link">
                   <h3 className="project-title">EasyStride</h3>
-                </Link>
+                </TrackedLink>
                 <p className="project-desc" style={{fontStyle:'italic', marginBottom:'4px', color:'var(--ink-mid)'}}>Wearable Injury Prevention for Running</p>
                 <p className="project-desc">
                   A shin-mounted wearable for runners with injury history. Built
@@ -176,26 +177,26 @@ export default function Home() {
                   <span className="project-tag">Product Strategy</span>
                 </div>
                 <span className="project-origin">Independent Project</span>
-                <Link href="/easystride" className="project-link">View product overview →</Link>
+                <TrackedLink href="/easystride" project="easystride" location="cta" className="project-link">View product overview →</TrackedLink>
               </div>
             </div>
 
             {/* Apollo Dash - image on right */}
             <div className="project-row flip">
-              <Link href="/manufacturing" className="project-img-link">
+              <TrackedLink href="/manufacturing" project="apollo-dash" location="image" className="project-img-link">
                 <div className="project-img-wrap">
                   <img
                     src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/mfg_dash_img.png"
                     alt="Apollo Dash manufacturing dashboard"
                   />
                 </div>
-              </Link>
+              </TrackedLink>
               <div className="project-text">
                 <span className="project-num">02</span>
                 <div className="project-bar" />
-                <Link href="/manufacturing" className="project-title-link">
+                <TrackedLink href="/manufacturing" project="apollo-dash" location="title" className="project-title-link">
                   <h3 className="project-title">Apollo Dash</h3>
-                </Link>
+                </TrackedLink>
                 <p className="project-desc" style={{fontStyle:'italic', marginBottom:'4px', color:'var(--ink-mid)'}}>Large-scale manufacturing data platform for new automated line</p>
                 <p className="project-desc">
                   A decision-grade manufacturing analytics platform - 200+ individually configured metrics across a 13-tool flow cell line, 5 engineering teams aligned around shared infrastructure, and a 55% scrap rate reduction that enabled the $200 genome.
@@ -210,7 +211,7 @@ export default function Home() {
                   <span className="project-origin">Industry Project</span>
                   <span className="project-origin">Illumina</span>
                 </div>
-                <Link href="/manufacturing" className="project-link">View product overview →</Link>
+                <TrackedLink href="/manufacturing" project="apollo-dash" location="cta" className="project-link">View product overview →</TrackedLink>
               </div>
             </div>
           </div>

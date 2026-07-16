@@ -65,28 +65,28 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   width: 720px; height: 640px;
   background: #e8cef2;
   top: -80px; left: -120px;
-  opacity: 0.50;
+  opacity: 0.46;
   animation: blob-float-1 14s ease-in-out infinite;
 }
 .aurora-blob-2 {
   width: 580px; height: 500px;
   background: #f5c8dc;
   top: 28vh; right: -40px;
-  opacity: 0.42;
+  opacity: 0.38;
   animation: blob-float-2 18s ease-in-out infinite;
 }
 .aurora-blob-3 {
   width: 640px; height: 560px;
   background: #f9cfc0;
   bottom: -80px; left: 10%;
-  opacity: 0.44;
+  opacity: 0.40;
   animation: blob-float-3 22s ease-in-out infinite;
 }
 .aurora-blob-4 {
   width: 580px; height: 500px;
   background: #fae3b8;
   top: 18vh; right: 18%;
-  opacity: 0.53;
+  opacity: 0.47;
   animation: blob-float-1 26s ease-in-out infinite reverse;
 }
 @keyframes blob-float-1 {
