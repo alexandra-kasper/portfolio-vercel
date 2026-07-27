@@ -67,6 +67,7 @@ export default function EasyStride() {
                 <li><a href="#market">02. Market Gap</a></li>
                 <li><a href="#positioning">03. Strategic Positioning</a></li>
                 <li><a href="#research">04. User Research</a></li>
+                <li><a href="#hardware">05. Hardware Design</a></li>
               </ul>
             </aside>
 
@@ -336,6 +337,119 @@ export default function EasyStride() {
                     participants to see if they are aware of ACWR.
                   </p>
                 </div>
+              </section>
+
+              {/* 05 — Hardware Design */}
+              <section className="cs-section" id="hardware">
+                <span className="cs-section-num">05</span>
+                <h2 className="cs-section-title">Hardware Design</h2>
+                <span className="cs-section-subtitle">
+                  Component selection under a binding weight constraint
+                </span>
+
+                <div className="hw-row">
+                  <div className="hw-subsystem">Sensors</div>
+                  <ul className="hw-components">
+                    <li>
+                      <strong>IMU - MPU-9250:</strong> 9-axis (accel/gyro/mag) at
+                      the tibia, chosen for proven library support and a sample
+                      rate well above the ~50Hz gait needs.
+                    </li>
+                    <li>
+                      <strong>Altimeter - BMP280 over GPS:</strong> ~1mA vs
+                      GPS&apos;s ~30mA, avoiding the battery/enclosure size cascade
+                      while still capturing the elevation data that drives
+                      terrain-aware load.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="hw-row">
+                  <div className="hw-subsystem">Microcontroller</div>
+                  <ul className="hw-components">
+                    <li>
+                      <strong>ESP32-WROOM-32:</strong> dual-core with built-in BLE
+                      and enough GPIO for the full sensor + power stack, trading a
+                      larger prototype footprint for known-good library support.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="hw-row">
+                  <div className="hw-subsystem">Power Management System</div>
+                  <ul className="hw-components">
+                    <li>
+                      <strong>Battery - Jauch 450mAh LiPo:</strong> the lightest
+                      cell (~10g) meeting the 2-hour session target, with built-in
+                      over/under-voltage and short-circuit protection plus an NTC
+                      thermistor for temperature-safe charging; weight is the
+                      system&apos;s binding constraint, and going lighter means a
+                      custom cell.
+                    </li>
+                    <li>
+                      <strong>Regulator - MCP1700 LDO:</strong> 89% efficiency at
+                      nominal voltage recovered ~1 hour of runtime over the
+                      original two-stage design.
+                    </li>
+                    <li>
+                      <strong>Charger - TP4056 (USB-C):</strong> charge current
+                      set to a conservative 0.47C via one resistor swap; NTC
+                      protection handled in firmware.
+                    </li>
+                    <li>
+                      <strong>Fuel gauge - MAX17048:</strong> ±1-2%
+                      state-of-charge for both firmware safety cutoffs and
+                      user-facing battery level.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="hw-row">
+                  <div className="hw-subsystem">Storage</div>
+                  <ul className="hw-components">
+                    <li>
+                      <strong>MicroSD:</strong> full-session CSV logging
+                      on-device; 8GB is sufficient but 32GB is the practical buy.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="hw-row">
+                  <div className="hw-subsystem">Interface</div>
+                  <ul className="hw-components">
+                    <li>
+                      <strong>RGB LED:</strong> single indicator encodes all
+                      device states via color + blink pattern.
+                    </li>
+                    <li>
+                      <strong>Tactile button:</strong> single/double/long-press
+                      gestures drive all control, 150-250gf.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="hw-row">
+                  <div className="hw-subsystem">Out of Scope</div>
+                  <ul className="hw-components">
+                    <li>
+                      <strong>Haptic motor:</strong> descoped alongside real-time
+                      form correction.
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  className="cs-img-wrap"
+                  style={{ marginTop: "32px" }}
+                  onClick={() => openLightbox("https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/easystride-wiring-diagram-rev-e%201.png")}
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/easystride-wiring-diagram-rev-e%201.png"
+                    alt="EasyStride hardware schematic"
+                  />
+                  <span className="cs-img-hint">Click to zoom</span>
+                </div>
+                <p className="cs-caption">Hardware Schematic</p>
               </section>
 
 
