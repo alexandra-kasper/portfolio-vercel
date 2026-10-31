@@ -9,7 +9,7 @@ export function trackEvent(eventName, params = {}) {
 }
 
 // Specific helper for case-study link clicks.
-// `project` is which case study (easystride / apollo-dash),
+// `project` is which case study (levara / apollo-dash),
 // `location` is where on the page the click happened
 // (image, title, or cta) so you can see which link people use.
 export function trackCaseStudyClick(project, location) {

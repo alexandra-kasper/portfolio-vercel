@@ -9,5 +9,10 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      { source: "/easystride", destination: "/levara", permanent: true },
+    ];
+  },
 };
 module.exports = nextConfig;

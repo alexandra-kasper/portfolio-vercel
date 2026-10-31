@@ -115,7 +115,7 @@ export default function Home() {
                 instinct behind every cup, bowl, or serving platter I&apos;ve
                 crafted from clay. I&apos;ve been leaning into the joy I found with
                 product work at Illumina through{" "}
-                <span className="accent-text">EasyStride</span> (linked below),
+                <span className="accent-text">Levara</span> (linked below),
                 where <span className="accent-text">product positioning</span>,{" "}
                 <span className="accent-text">competitive analysis</span>,{" "}
                 <span className="accent-text">user interviews</span>,{" "}
@@ -141,13 +141,13 @@ export default function Home() {
             <h2 className="section-title">Selected projects</h2>
             <p className="section-subtext">A mix of independent projects and industry work.</p>
 
-            {/* EasyStride */}
+            {/* Levara */}
             <div className="project-row">
-              <TrackedLink href="/easystride" project="easystride" location="image" className="project-img-link">
+              <TrackedLink href="/levara" project="levara" location="image" className="project-img-link">
                 <div className="project-img-wrap">
                   <NextImage
                     src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/app_design_display.png"
-                    alt="EasyStride app interface"
+                    alt="Levara app interface"
                     width={1600}
                     height={1000}
                     sizes="(max-width: 740px) 100vw, 50vw"
@@ -159,8 +159,8 @@ export default function Home() {
               <div className="project-text">
                 <span className="project-num">01</span>
                 <div className="project-bar" />
-                <TrackedLink href="/easystride" project="easystride" location="title" className="project-title-link">
-                  <h3 className="project-title">EasyStride</h3>
+                <TrackedLink href="/levara" project="levara" location="title" className="project-title-link">
+                  <h3 className="project-title">Levara</h3>
                 </TrackedLink>
                 <p className="project-desc" style={{fontStyle:'italic', marginBottom:'4px', color:'var(--ink-mid)'}}>Wearable Injury Prevention for Running</p>
                 <p className="project-desc">
@@ -177,7 +177,7 @@ export default function Home() {
                   <span className="project-tag">Product Strategy</span>
                 </div>
                 <span className="project-origin">Independent Project</span>
-                <TrackedLink href="/easystride" project="easystride" location="cta" className="project-link">View product overview →</TrackedLink>
+                <TrackedLink href="/levara" project="levara" location="cta" className="project-link">View product overview →</TrackedLink>
               </div>
             </div>
 

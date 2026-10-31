@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const ALL_PROJECTS = [
   {
-    slug: "easystride",
+    slug: "levara",
     num: "01",
-    title: "EasyStride",
+    title: "Levara",
     desc: "A shin-mounted wearable for runners with injury history. Built for injury prevention over performance, emphasizing consistency as the strongest modifiable predictor of staying healthy.",
     tags: ["Wearable", "Hardware", "Mobile App", "Product Strategy"],
-    href: "/easystride",
+    href: "/levara",
   },
   {
     slug: "manufacturing",

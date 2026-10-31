@@ -551,7 +551,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   pointer-events: none;
 }
 
-/* ── Four decisions banner (EasyStride) ─────────────────────────── */
+/* ── Four decisions banner (Levara) ─────────────────────────── */
 .four-decisions {
   padding: 28px 0 0;
   margin-bottom: 0;

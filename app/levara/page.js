@@ -6,7 +6,7 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import OtherProjects from "../../components/OtherProjects";
 
-export default function EasyStride() {
+export default function Levara() {
   useEffect(() => {
     const links = document.querySelectorAll(".cs-toc-list a");
     const handler = () => {
@@ -47,7 +47,7 @@ export default function EasyStride() {
               <span className="cs-tag">Mobile App</span>
               <span className="cs-tag">Product Strategy</span>
             </div>
-            <h1 className="cs-title">EasyStride</h1>
+            <h1 className="cs-title">Levara</h1>
             <p className="cs-subtitle">
               Wearable Injury Prevention for Running - a shin-mounted wearable
               for runners with injury history, built to motivate and reward
@@ -105,7 +105,7 @@ export default function EasyStride() {
                     </div>
                   </div>
                   <p className="four-decisions-closing">
-                    EasyStride makes these decisions easier by tracking an
+                    Levara makes these decisions easier by tracking an
                     individual&apos;s biomechanical data, comparing it to baseline,
                     providing recommendations, and partnering with the user on
                     training plans.
@@ -162,7 +162,7 @@ export default function EasyStride() {
                 <h2 className="cs-section-title">Strategic Positioning</h2>
                 <div className="cs-sub">
                   <p>
-                    EasyStride is built for a runner focused primarily on staying
+                    Levara is built for a runner focused primarily on staying
                     healthy, not performance. The target user values accurate data
                     and wants help managing biomechanical load and automatic
                     detection of changes in their baseline form that could
@@ -176,7 +176,7 @@ export default function EasyStride() {
                 >
                   <img
                     src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/app_design_display.png"
-                    alt="EasyStride app UI"
+                    alt="Levara app UI"
                     style={{ width: "100%", display: "block" }}
                   />
                   <span className="cs-img-hint">Click to zoom</span>
@@ -189,7 +189,7 @@ export default function EasyStride() {
                 <h2 className="cs-section-title">User Research</h2>
                 <div className="cs-sub">
                   <p>
-                    To ground EasyStride in real runner experience, I conducted
+                    To ground Levara in real runner experience, I conducted
                     12 semi-structured interviews with recreational runners, all
                     screened for a history of running injury. Participants were 8
                     women and 4 men - a split chosen deliberately: the interviews
@@ -445,7 +445,7 @@ export default function EasyStride() {
                 >
                   <img
                     src="https://raw.githubusercontent.com/alexandra-kasper/easystride_public/refs/heads/main/easystride-wiring-diagram-rev-e%201.png"
-                    alt="EasyStride hardware schematic"
+                    alt="Levara hardware schematic"
                   />
                   <span className="cs-img-hint">Click to zoom</span>
                 </div>
@@ -457,7 +457,7 @@ export default function EasyStride() {
           </div>
         </div>
 
-        <OtherProjects currentSlug="easystride" />
+        <OtherProjects currentSlug="levara" />
 
         <div className="lightbox" id="lightbox" onClick={closeLightbox}>
           <button className="lightbox-close" onClick={closeLightbox}>×</button>
